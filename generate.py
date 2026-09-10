@@ -64,8 +64,10 @@ def reviews_section_html(store):
         return ""
     if r.get("rating") is not None:
         summary_line = f'<span class="stars">{star_string(r["rating"])}</span> <strong>{r["rating"]:.1f} out of 5</strong> &middot; {r["count"]:,} reviews on <a href="{r["source_url"]}" target="_blank" rel="noopener nofollow">{e(r["source"])}</a>'
-    else:
+    elif r.get("count") is not None:
         summary_line = f'<strong>{r["count"]:,} reviews</strong> on <a href="{r["source_url"]}" target="_blank" rel="noopener nofollow">{e(r["source"])}</a>'
+    else:
+        summary_line = f'Real reviews from <a href="{r["source_url"]}" target="_blank" rel="noopener nofollow">{e(r["source"])}</a>'
     cards = "".join(
         f"""<div class="review-card"><p>&ldquo;{e(q['text'])}&rdquo;</p><span class="reviewer">&mdash; {e(q['name'])}</span></div>"""
         for q in r.get("quotes", [])

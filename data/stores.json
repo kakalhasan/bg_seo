@@ -407,38 +407,52 @@
       "phone_display": "+91 80978 65848",
       "phone_tel": "+918097865848",
       "whatsapp_number": "918097865848",
-      "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+navi+mumbai",
-      "lat": 19.0260183,
-      "lng": 73.0100097,
-      "intro": "Bikester Global Navi Mumbai is in Sector 50 E, Seawoods West, Nerul — close enough to Palm Beach Road to cover Sanpada, Vashi and Juinagar riders without crossing the highway. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
+      "maps_url": "https://maps.app.goo.gl/cC7LxiMRCkW2aAfa6",
+      "lat": 19.0120102,
+      "lng": 73.0235427,
+      "intro": "Bikester Global Navi Mumbai is in Sector 50 E, Seawoods West, Nerul, just off Palm Beach Road — closest to CBD Belapur, with Juinagar, Sanpada and Vashi riders a straightforward run up Palm Beach Road away. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
+      "reviews": {
+        "rating": null,
+        "count": null,
+        "source": "Google",
+        "source_url": "https://maps.app.goo.gl/cC7LxiMRCkW2aAfa6",
+        "quotes": [
+          {"name": "Nikhil Narvekar", "text": "I had a great experience shopping at Bikester Global, Seawoods. I initially purchased a pair of riding gloves, but later needed to exchange them for another product. The store staff were extremely helpful and handled the entire exchange process smoothly and professionally, making it a completely hassle-free experience. The store offers a wide range of high-quality riding gear, and the team is knowledgeable, courteous, and customer-focused."},
+          {"name": "Rahul Lalwani", "text": "So Bikester Global just opened a store in Nerul, Navi Mumbai. In the city I live, landed on the opening day and was helped really well by Akash to choose the right gloves."},
+          {"name": "Yogesh Mutkiri", "text": "Great experience at Bikester Global Seawoods branch. I bought the LS2 Storm 2 and their executive Akash did an excellent job helping me find the best fit and best graphics."},
+          {"name": "Krish Patil", "text": "Great experience with great prices, very loving staff, helped out a lot — quite a lot of helmets, gloves and accessories available at great price. Loved it."},
+          {"name": "Saurabh K", "text": "Great shopping experience with Bikester Global. The product was genuine, staff is extremely helpful."},
+          {"name": "Shraval Gangurde", "text": "Awesome shop, variety of gears available, helpful and polite staff."}
+        ]
+      },
       "localities": [
         {
-          "name": "Sanpada",
-          "slug": "sanpada",
-          "km": 4.4,
-          "minutes": "12-15",
-          "blurb": "Sanpada riders usually come down Palm Beach Road, a straightforward run to Seawoods with light traffic outside peak hours. A common stop for Palm Beach Road regulars wanting a well-ventilated helmet for the coastal stretch."
-        },
-        {
-          "name": "Vashi",
-          "slug": "vashi",
-          "km": 4.3,
-          "minutes": "15-18",
-          "blurb": "From Vashi, down Palm Beach Road or the Sion-Panvel Highway service road, budget fifteen to eighteen minutes depending on the APMC market traffic. Worth the trip for riders comparing touring luggage — tank bags and saddle bags are easier to judge in person."
+          "name": "CBD Belapur",
+          "slug": "cbd-belapur",
+          "km": 1.8,
+          "minutes": "7-9",
+          "blurb": "CBD Belapur is the closest business district to the Seawoods store — a straight run down Palm Beach Road, under ten minutes outside office rush hour. Handy for the Belapur business-district crowd swinging by after work to try on a jacket before deciding."
         },
         {
           "name": "Juinagar",
           "slug": "juinagar",
-          "km": 3.4,
-          "minutes": "10-12",
-          "blurb": "Juinagar is a short, easy ride down to Seawoods — mostly along the service road, under fifteen minutes even with signals. A regular stop for station-area commuters picking up gloves or a quick visor swap."
+          "km": 4.9,
+          "minutes": "15-18",
+          "blurb": "Juinagar riders head down Palm Beach Road or the station-side service road to reach Seawoods, usually under twenty minutes outside peak hours. A regular stop for station-area commuters picking up gloves or a quick visor swap."
         },
         {
-          "name": "CBD Belapur",
-          "slug": "cbd-belapur",
-          "km": 3.2,
-          "minutes": "10-12",
-          "blurb": "CBD Belapur riders heading to Seawoods usually take Palm Beach Road south, around ten to twelve minutes outside office rush hour. Handy for the Belapur business-district crowd swinging by after work to try on a jacket before deciding."
+          "name": "Sanpada",
+          "slug": "sanpada",
+          "km": 6.2,
+          "minutes": "20-25",
+          "blurb": "Sanpada riders usually come down Palm Beach Road, a longer but straightforward run to Seawoods with light traffic outside peak hours. A common stop for Palm Beach Road regulars wanting a well-ventilated helmet for the coastal stretch."
+        },
+        {
+          "name": "Vashi",
+          "slug": "vashi",
+          "km": 6.3,
+          "minutes": "20-25",
+          "blurb": "From Vashi, down Palm Beach Road or the Sion-Panvel Highway service road, budget twenty to twenty-five minutes depending on the APMC market traffic. Worth the trip for riders comparing touring luggage — tank bags and saddle bags are easier to judge in person."
         }
       ],
       "faqs": [
