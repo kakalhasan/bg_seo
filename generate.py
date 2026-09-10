@@ -82,6 +82,22 @@ def reviews_section_html(store):
 </section>"""
 
 
+def gallery_html(store):
+    photos = store.get("gallery")
+    if not photos:
+        return ""
+    cards = "".join(
+        f'<div class="photo-card"><img src="../../{p["file"]}" alt="{e(p["alt"])}" loading="lazy" width="1100" height="825"></div>'
+        for p in photos
+    )
+    return f"""<section class="alt">
+  <div class="wrap">
+    <h2>Inside {e(store['area'])}</h2>
+    <div class="photo-grid">{cards}</div>
+  </div>
+</section>"""
+
+
 def mobile_cta_bar(store):
     wa_text = f"Hi, I'd like to visit Bikester Global {store['area']} for riding gear."
     return f"""<div class="mobile-cta-bar">
@@ -138,7 +154,7 @@ def store_schema(store):
         "@context": "https://schema.org",
         "@type": "SportingGoodsStore",
         "name": store["name"],
-        "image": f"{BASE_URL}/assets/img/icon-512.png",
+        "image": [f"{BASE_URL}/{p['file']}" for p in store.get("gallery", [])] or [f"{BASE_URL}/assets/img/icon-512.png"],
         "telephone": store["phone_tel"],
         "url": f"{BASE_URL}/stores/{store['slug']}/",
         "priceRange": "₹₹",
@@ -225,7 +241,10 @@ def write(path, content):
 def build_index():
     cards = ""
     for s in STORES:
+        thumb = s.get("gallery", [{}])[0]
+        img_html = f'<div class="photo-card" style="aspect-ratio:16/9;margin-bottom:6px;"><img src="{thumb["file"]}" alt="{e(thumb["alt"])}" loading="lazy" width="1100" height="619"></div>' if thumb.get("file") else ""
         cards += f"""<div class="store-card">
+      {img_html}
       <h3>{e(s['area'])}</h3>
       <p class="addr">{e(', '.join(s['address_lines']))}</p>
       {cta_row(s, s['area'])}
@@ -355,6 +374,8 @@ def build_store_pages():
     </div>
   </div>
 </section>
+
+{gallery_html(s)}
 
 {reviews_section_html(s)}
 

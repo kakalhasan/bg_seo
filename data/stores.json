@@ -6,15 +6,30 @@
     "parent_url": "https://bikesterglobal.com",
     "tagline": "Ride your dream",
     "description": "Bikester Global is a Mumbai-based riding gear retailer with walk-in stores across the city, stocking ECE/DOT certified helmets and riding gear from LS2, Crank1 and other established brands, alongside touring luggage and bike accessories.",
-    "categories": ["Helmets", "Riding Jackets", "Gloves", "Riding Boots", "Touring Luggage & Bags", "Bike Accessories & Electronics"],
-    "brands_carried": ["LS2", "Crank1", "MadDog"]
+    "categories": [
+      "Helmets",
+      "Riding Jackets",
+      "Gloves",
+      "Riding Boots",
+      "Touring Luggage & Bags",
+      "Bike Accessories & Electronics"
+    ],
+    "brands_carried": [
+      "LS2",
+      "Crank1",
+      "MadDog"
+    ]
   },
   "stores": [
     {
       "slug": "malad",
       "name": "Bikester Global - Malad",
       "area": "Malad West",
-      "address_lines": ["Gala 4, Shakti Textile, Chincholi Bunder Rd", "next to TATA Motors, Ram Nagar", "Malad West, Mumbai, Maharashtra 400064"],
+      "address_lines": [
+        "Gala 4, Shakti Textile, Chincholi Bunder Rd",
+        "next to TATA Motors, Ram Nagar",
+        "Malad West, Mumbai, Maharashtra 400064"
+      ],
       "landmark": "next to Tata Motors on Chincholi Bunder Road",
       "phone_display": "+91 88287 73484",
       "phone_tel": "+918828773484",
@@ -29,31 +44,107 @@
         "source": "Google",
         "source_url": "https://www.trustindex.io/reviews/www.google.com-search-188",
         "quotes": [
-          {"name": "Sushmita Das (VStromCouple)", "text": "Just like you have a favourite restaurant for your hunger cravings, every rider has that one go-to place for bike gear and accessories. For us, it's Bikester Global. They have a great range of saddle bags, fog lights, riding jackets, boots, mounts and other essential riding gear. What makes the experience even better is the support from Abdul and Ali — they're always there to guide you and recommend the best-suited products for both you and your motorcycle, based on real riding needs."},
-          {"name": "Aatif Shaikh", "text": "I had an amazing experience with this team! Their service was top-notch, and everything was handled smoothly even remotely."},
-          {"name": "Soumya Panda", "text": "Got the tarmac riding jacket and other products. All are genuine and I am happy with the service."},
-          {"name": "Shreesh Melmani", "text": "This is best shop for buying bike accessories — if you are looking for any bike accessories please do visit over here."}
+          {
+            "name": "Sushmita Das (VStromCouple)",
+            "text": "Just like you have a favourite restaurant for your hunger cravings, every rider has that one go-to place for bike gear and accessories. For us, it's Bikester Global. They have a great range of saddle bags, fog lights, riding jackets, boots, mounts and other essential riding gear. What makes the experience even better is the support from Abdul and Ali — they're always there to guide you and recommend the best-suited products for both you and your motorcycle, based on real riding needs."
+          },
+          {
+            "name": "Aatif Shaikh",
+            "text": "I had an amazing experience with this team! Their service was top-notch, and everything was handled smoothly even remotely."
+          },
+          {
+            "name": "Soumya Panda",
+            "text": "Got the tarmac riding jacket and other products. All are genuine and I am happy with the service."
+          },
+          {
+            "name": "Shreesh Melmani",
+            "text": "This is best shop for buying bike accessories — if you are looking for any bike accessories please do visit over here."
+          }
         ]
       },
       "localities": [
-        {"name": "Kandivali West", "slug": "kandivali-west", "km": 3.9, "minutes": "10-15", "blurb": "Riders from Kandivali West usually reach us via SV Road or the Link Road flyover, cutting past Charkop and Poisar Depot. It's a straight run down Chincholi Bunder Road once you're past the Malad signal — the store is on your left, right next to the Tata Motors showroom. Handy stop if you're commuting daily on the Link Road corridor and want your helmet fitted properly instead of ordering a guessed size online."},
-        {"name": "Goregaon West", "slug": "goregaon-west", "km": 1.9, "minutes": "7-10", "blurb": "Goregaon West — Oberoi Mall, Aarey Road, Link Road — is barely ten minutes from the Malad store. A lot of our Goregaon regulars ride down on their lunch break to swap a scratched visor or pick up gloves before a weekend trip. Chincholi Bunder Road connects straight through, no real traffic snarl between the two."},
-        {"name": "Orlem", "slug": "orlem", "km": 1.2, "minutes": "5", "blurb": "Orlem is practically next door — five minutes from the Orlem Church junction down Chincholi Bunder Road. If you're around Mith Chowki or Liberty Garden and your helmet strap just gave up, it's faster to walk in than to order online and wait."},
-        {"name": "Marve Road", "slug": "marve-road", "km": 2.1, "minutes": "7-10", "blurb": "If you're based along Marve Road and riding out toward Aksa or Madh Island on weekends, swing by the Malad store first — get your helmet's visor and ventilation checked before a long ride, not after. It's a short, straight hop down to Chincholi Bunder Road."},
-        {"name": "Kandivali East", "slug": "kandivali-east", "km": 4.0, "minutes": "15-20", "blurb": "From Kandivali East — Thakur Village, Poisar — the ride down is via the Western Express Highway service road or the Link Road flyover, roughly 15-20 minutes depending on the signal at Malad. Worth the trip if you want to physically compare an LS2 full-face against a modular before deciding, rather than guess from photos."}
+        {
+          "name": "Kandivali West",
+          "slug": "kandivali-west",
+          "km": 3.9,
+          "minutes": "10-15",
+          "blurb": "Riders from Kandivali West usually reach us via SV Road or the Link Road flyover, cutting past Charkop and Poisar Depot. It's a straight run down Chincholi Bunder Road once you're past the Malad signal — the store is on your left, right next to the Tata Motors showroom. Handy stop if you're commuting daily on the Link Road corridor and want your helmet fitted properly instead of ordering a guessed size online."
+        },
+        {
+          "name": "Goregaon West",
+          "slug": "goregaon-west",
+          "km": 1.9,
+          "minutes": "7-10",
+          "blurb": "Goregaon West — Oberoi Mall, Aarey Road, Link Road — is barely ten minutes from the Malad store. A lot of our Goregaon regulars ride down on their lunch break to swap a scratched visor or pick up gloves before a weekend trip. Chincholi Bunder Road connects straight through, no real traffic snarl between the two."
+        },
+        {
+          "name": "Orlem",
+          "slug": "orlem",
+          "km": 1.2,
+          "minutes": "5",
+          "blurb": "Orlem is practically next door — five minutes from the Orlem Church junction down Chincholi Bunder Road. If you're around Mith Chowki or Liberty Garden and your helmet strap just gave up, it's faster to walk in than to order online and wait."
+        },
+        {
+          "name": "Marve Road",
+          "slug": "marve-road",
+          "km": 2.1,
+          "minutes": "7-10",
+          "blurb": "If you're based along Marve Road and riding out toward Aksa or Madh Island on weekends, swing by the Malad store first — get your helmet's visor and ventilation checked before a long ride, not after. It's a short, straight hop down to Chincholi Bunder Road."
+        },
+        {
+          "name": "Kandivali East",
+          "slug": "kandivali-east",
+          "km": 4.0,
+          "minutes": "15-20",
+          "blurb": "From Kandivali East — Thakur Village, Poisar — the ride down is via the Western Express Highway service road or the Link Road flyover, roughly 15-20 minutes depending on the signal at Malad. Worth the trip if you want to physically compare an LS2 full-face against a modular before deciding, rather than guess from photos."
+        }
       ],
       "faqs": [
-        {"q": "Does the Malad store stock ISI and DOT certified helmets?", "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."},
-        {"q": "Can I try on jackets, gloves and boots before buying?", "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."},
-        {"q": "Where exactly is the store located?", "a": "Gala 4, Shakti Textile, Chincholi Bunder Road, right next to the Tata Motors showroom in Malad West. Tap \"Get Directions\" above for turn-by-turn navigation."},
-        {"q": "Can I check if a specific helmet or size is in stock before I come?", "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."}
+        {
+          "q": "Does the Malad store stock ISI and DOT certified helmets?",
+          "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."
+        },
+        {
+          "q": "Can I try on jackets, gloves and boots before buying?",
+          "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."
+        },
+        {
+          "q": "Where exactly is the store located?",
+          "a": "Gala 4, Shakti Textile, Chincholi Bunder Road, right next to the Tata Motors showroom in Malad West. Tap \"Get Directions\" above for turn-by-turn navigation."
+        },
+        {
+          "q": "Can I check if a specific helmet or size is in stock before I come?",
+          "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."
+        }
+      ],
+      "gallery": [
+        {
+          "file": "assets/img/stores/malad/malad-1.jpg",
+          "alt": "Inside Bikester Global Malad — sales counter, riding jackets and boots on display"
+        },
+        {
+          "file": "assets/img/stores/malad/malad-2.jpg",
+          "alt": "Full-face and modular helmet wall at Bikester Global Malad"
+        },
+        {
+          "file": "assets/img/stores/malad/malad-3.jpg",
+          "alt": "Riding jackets, boots and electronics section at Bikester Global Malad"
+        },
+        {
+          "file": "assets/img/stores/malad/malad-4.jpg",
+          "alt": "Touring luggage and tank bag wall at Bikester Global Malad"
+        }
       ]
     },
     {
       "slug": "santacruz",
       "name": "Bikester Global - Santacruz",
       "area": "Santacruz West",
-      "address_lines": ["Shop No. 5/6, Mahesh Building", "VM Bhargav Road", "Santacruz West, Mumbai, Maharashtra 400054"],
+      "address_lines": [
+        "Shop No. 5/6, Mahesh Building",
+        "VM Bhargav Road",
+        "Santacruz West, Mumbai, Maharashtra 400054"
+      ],
       "landmark": "on VM Bhargav Road, Santacruz West",
       "phone_display": "+91 79779 63846",
       "phone_tel": "+917977963846",
@@ -70,30 +161,88 @@
         "quotes": []
       },
       "localities": [
-        {"name": "Vile Parle West", "slug": "vile-parle-west", "km": 2.2, "minutes": "7-10", "blurb": "Vile Parle West riders — including the college crowd around Parle campuses — usually come down SV Road, a straight eight-minute ride to VM Bhargav Road. A regular stop for first-time riders picking their first ISI-marked helmet."},
-        {"name": "Khar West", "slug": "khar-west", "km": 1.8, "minutes": "6-8", "blurb": "Khar West is one of the closest localities to the Santacruz store — down Linking Road and a quick cut onto VM Bhargav Road, under ten minutes on a normal traffic day. Handy for a fast in-and-out gear check between errands."},
-        {"name": "Bandra West", "slug": "bandra-west", "km": 3.0, "minutes": "10-12", "blurb": "From Bandra West — Linking Road, Turner Road, Pali Hill — it's about ten to twelve minutes down to Santacruz, mostly along Linking Road itself. A common stop for riders upgrading from a stock helmet to a proper ECE-rated one before longer highway runs."},
-        {"name": "Andheri West", "slug": "andheri-west", "km": 3.7, "minutes": "12-15", "blurb": "Andheri West riders coming down SV Road hit some signal traffic near Vile Parle, so budget closer to fifteen minutes. Worth it if you want to physically compare glove and boot sizes across brands rather than order two sizes online and return one."}
+        {
+          "name": "Vile Parle West",
+          "slug": "vile-parle-west",
+          "km": 2.2,
+          "minutes": "7-10",
+          "blurb": "Vile Parle West riders — including the college crowd around Parle campuses — usually come down SV Road, a straight eight-minute ride to VM Bhargav Road. A regular stop for first-time riders picking their first ISI-marked helmet."
+        },
+        {
+          "name": "Khar West",
+          "slug": "khar-west",
+          "km": 1.8,
+          "minutes": "6-8",
+          "blurb": "Khar West is one of the closest localities to the Santacruz store — down Linking Road and a quick cut onto VM Bhargav Road, under ten minutes on a normal traffic day. Handy for a fast in-and-out gear check between errands."
+        },
+        {
+          "name": "Bandra West",
+          "slug": "bandra-west",
+          "km": 3.0,
+          "minutes": "10-12",
+          "blurb": "From Bandra West — Linking Road, Turner Road, Pali Hill — it's about ten to twelve minutes down to Santacruz, mostly along Linking Road itself. A common stop for riders upgrading from a stock helmet to a proper ECE-rated one before longer highway runs."
+        },
+        {
+          "name": "Andheri West",
+          "slug": "andheri-west",
+          "km": 3.7,
+          "minutes": "12-15",
+          "blurb": "Andheri West riders coming down SV Road hit some signal traffic near Vile Parle, so budget closer to fifteen minutes. Worth it if you want to physically compare glove and boot sizes across brands rather than order two sizes online and return one."
+        }
       ],
       "faqs": [
-        {"q": "Does the Santacruz store stock ISI and DOT certified helmets?", "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."},
-        {"q": "Can I try on jackets, gloves and boots before buying?", "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."},
-        {"q": "Where exactly is the store located?", "a": "Shop No. 5/6, Mahesh Building, VM Bhargav Road, Santacruz West. Tap \"Get Directions\" above for turn-by-turn navigation."},
-        {"q": "Can I check if a specific helmet or size is in stock before I come?", "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."}
+        {
+          "q": "Does the Santacruz store stock ISI and DOT certified helmets?",
+          "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."
+        },
+        {
+          "q": "Can I try on jackets, gloves and boots before buying?",
+          "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."
+        },
+        {
+          "q": "Where exactly is the store located?",
+          "a": "Shop No. 5/6, Mahesh Building, VM Bhargav Road, Santacruz West. Tap \"Get Directions\" above for turn-by-turn navigation."
+        },
+        {
+          "q": "Can I check if a specific helmet or size is in stock before I come?",
+          "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."
+        }
+      ],
+      "gallery": [
+        {
+          "file": "assets/img/stores/santacruz/santacruz-1.jpg",
+          "alt": "Bikester Global Santacruz storefront with staff outside the shop"
+        },
+        {
+          "file": "assets/img/stores/santacruz/santacruz-2.jpg",
+          "alt": "Sales counter at Bikester Global Santacruz"
+        },
+        {
+          "file": "assets/img/stores/santacruz/santacruz-3.jpg",
+          "alt": "Riding jackets on display at Bikester Global Santacruz"
+        },
+        {
+          "file": "assets/img/stores/santacruz/santacruz-4.jpg",
+          "alt": "Riding gloves and accessories wall at Bikester Global Santacruz"
+        }
       ]
     },
     {
       "slug": "mira-road",
       "name": "Bikester Global - Mira Road",
       "area": "Mira Road East",
-      "address_lines": ["Shop No 8, Salasar Exotica 1", "next to GCC North Lawn, behind GCC Club Road, Phase 1, Gaurav Sankalp", "Mira Road East, Mira Bhayandar, Maharashtra 401107"],
+      "address_lines": [
+        "Shop No 8, Salasar Exotica 1",
+        "next to GCC North Lawn, behind GCC Club Road, Phase 1, Gaurav Sankalp",
+        "Mira Road East, Mira Bhayandar, Maharashtra 401107"
+      ],
       "landmark": "next to GCC North Lawn, Gaurav Sankalp, Mira Road East",
       "phone_display": "+91 93263 52575",
       "phone_tel": "+919326352575",
       "whatsapp_number": "919326352575",
       "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+miraroad",
       "lat": 19.2813896,
-      "lng": 72.8586390,
+      "lng": 72.858639,
       "intro": "Bikester Global Mira Road sits inside Salasar Exotica in Gaurav Sankalp, Phase 1, right next to GCC North Lawn on Mira Road East — a short ride for riders across Mira-Bhayandar. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": null,
@@ -103,22 +252,70 @@
         "quotes": []
       },
       "localities": [
-        {"name": "Bhayandar East", "slug": "bhayandar-east", "km": 2.0, "minutes": "8-10", "blurb": "Bhayandar East riders — around the station and New Golden Nest — usually come down via the Mira Bhayandar Road, about eight to ten minutes to Gaurav Sankalp. A regular stop for daily station commuters upgrading to a proper riding jacket."},
-        {"name": "Naya Nagar", "slug": "naya-nagar", "km": 0.4, "minutes": "2-3", "blurb": "Naya Nagar is essentially the same neighbourhood — a two-minute ride, sometimes faster to walk over. If your helmet's visor pin snapped on the way home, this is the closest place to sort it same day."},
-        {"name": "Kashimira", "slug": "kashimira", "km": 2.7, "minutes": "10-12", "blurb": "From Kashimira, down the Mira Bhayandar Road toward Ghodbunder, it's a straightforward ten-to-twelve-minute ride. Worth the stop if you're heading out toward Ghodbunder Road or further up the Mumbai-Ahmedabad highway and want your gear checked first."}
+        {
+          "name": "Bhayandar East",
+          "slug": "bhayandar-east",
+          "km": 2.0,
+          "minutes": "8-10",
+          "blurb": "Bhayandar East riders — around the station and New Golden Nest — usually come down via the Mira Bhayandar Road, about eight to ten minutes to Gaurav Sankalp. A regular stop for daily station commuters upgrading to a proper riding jacket."
+        },
+        {
+          "name": "Naya Nagar",
+          "slug": "naya-nagar",
+          "km": 0.4,
+          "minutes": "2-3",
+          "blurb": "Naya Nagar is essentially the same neighbourhood — a two-minute ride, sometimes faster to walk over. If your helmet's visor pin snapped on the way home, this is the closest place to sort it same day."
+        },
+        {
+          "name": "Kashimira",
+          "slug": "kashimira",
+          "km": 2.7,
+          "minutes": "10-12",
+          "blurb": "From Kashimira, down the Mira Bhayandar Road toward Ghodbunder, it's a straightforward ten-to-twelve-minute ride. Worth the stop if you're heading out toward Ghodbunder Road or further up the Mumbai-Ahmedabad highway and want your gear checked first."
+        }
       ],
       "faqs": [
-        {"q": "Does the Mira Road store stock ISI and DOT certified helmets?", "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."},
-        {"q": "Can I try on jackets, gloves and boots before buying?", "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."},
-        {"q": "Where exactly is the store located?", "a": "Shop No 8, Salasar Exotica 1, next to GCC North Lawn, Gaurav Sankalp Phase 1, Mira Road East. Tap \"Get Directions\" above for turn-by-turn navigation."},
-        {"q": "Can I check if a specific helmet or size is in stock before I come?", "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."}
+        {
+          "q": "Does the Mira Road store stock ISI and DOT certified helmets?",
+          "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."
+        },
+        {
+          "q": "Can I try on jackets, gloves and boots before buying?",
+          "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."
+        },
+        {
+          "q": "Where exactly is the store located?",
+          "a": "Shop No 8, Salasar Exotica 1, next to GCC North Lawn, Gaurav Sankalp Phase 1, Mira Road East. Tap \"Get Directions\" above for turn-by-turn navigation."
+        },
+        {
+          "q": "Can I check if a specific helmet or size is in stock before I come?",
+          "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."
+        }
+      ],
+      "gallery": [
+        {
+          "file": "assets/img/stores/mira-road/mira-road-1.jpg",
+          "alt": "Bikester Global Mira Road store interior with full helmet wall"
+        },
+        {
+          "file": "assets/img/stores/mira-road/mira-road-2.jpg",
+          "alt": "Close-up of the helmet wall at Bikester Global Mira Road"
+        },
+        {
+          "file": "assets/img/stores/mira-road/mira-road-3.jpg",
+          "alt": "Bikester Global Mira Road store interior, luggage and jackets section"
+        }
       ]
     },
     {
       "slug": "thane",
       "name": "Bikester Global - Thane",
       "area": "Thane West",
-      "address_lines": ["Shop no 7, 8, Mount Casa, Lal Bahadur Shastri Marg", "opposite Bramhala Lake, Khopat, Uthalsar", "Thane West, Thane, Maharashtra 400601"],
+      "address_lines": [
+        "Shop no 7, 8, Mount Casa, Lal Bahadur Shastri Marg",
+        "opposite Bramhala Lake, Khopat, Uthalsar",
+        "Thane West, Thane, Maharashtra 400601"
+      ],
       "landmark": "opposite Bramhala Lake, Khopat",
       "phone_display": "+91 86919 35938",
       "phone_tel": "+918691935938",
@@ -135,23 +332,77 @@
         "quotes": []
       },
       "localities": [
-        {"name": "Naupada", "slug": "naupada", "km": 1.5, "minutes": "6-8", "blurb": "Naupada is about as central-Thane as it gets — down Gokhale Road and onto LBS Marg, under ten minutes to Khopat. A common stop for riders in the market area picking up a first helmet or replacing a cracked visor."},
-        {"name": "Majiwada", "slug": "majiwada", "km": 1.3, "minutes": "8-10", "blurb": "Majiwada riders heading down toward the Ghodbunder Road flyover usually swing by Khopat first — traffic near the junction can stretch what's a short distance into a ten-minute ride. Worth planning around if you're heading further up Ghodbunder Road toward Bhiwandi."},
-        {"name": "Vartak Nagar", "slug": "vartak-nagar", "km": 1.7, "minutes": "7-9", "blurb": "From Vartak Nagar, near the Eastern Express Highway junction, it's a quick run down to Khopat — handy if you're commuting on the EEH daily and want gear that actually fits instead of whatever was left on the shelf."},
-        {"name": "Thane East", "slug": "thane-east", "km": 2.7, "minutes": "12-15", "blurb": "Thane East riders — around Kopri and the station — cross over via the station bridge or Kachrali, so budget closer to fifteen minutes depending on the time of day. A regular stop for station-area commuters looking to upgrade from a stock two-wheeler helmet."}
+        {
+          "name": "Naupada",
+          "slug": "naupada",
+          "km": 1.5,
+          "minutes": "6-8",
+          "blurb": "Naupada is about as central-Thane as it gets — down Gokhale Road and onto LBS Marg, under ten minutes to Khopat. A common stop for riders in the market area picking up a first helmet or replacing a cracked visor."
+        },
+        {
+          "name": "Majiwada",
+          "slug": "majiwada",
+          "km": 1.3,
+          "minutes": "8-10",
+          "blurb": "Majiwada riders heading down toward the Ghodbunder Road flyover usually swing by Khopat first — traffic near the junction can stretch what's a short distance into a ten-minute ride. Worth planning around if you're heading further up Ghodbunder Road toward Bhiwandi."
+        },
+        {
+          "name": "Vartak Nagar",
+          "slug": "vartak-nagar",
+          "km": 1.7,
+          "minutes": "7-9",
+          "blurb": "From Vartak Nagar, near the Eastern Express Highway junction, it's a quick run down to Khopat — handy if you're commuting on the EEH daily and want gear that actually fits instead of whatever was left on the shelf."
+        },
+        {
+          "name": "Thane East",
+          "slug": "thane-east",
+          "km": 2.7,
+          "minutes": "12-15",
+          "blurb": "Thane East riders — around Kopri and the station — cross over via the station bridge or Kachrali, so budget closer to fifteen minutes depending on the time of day. A regular stop for station-area commuters looking to upgrade from a stock two-wheeler helmet."
+        }
       ],
       "faqs": [
-        {"q": "Does the Thane store stock ISI and DOT certified helmets?", "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."},
-        {"q": "Can I try on jackets, gloves and boots before buying?", "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."},
-        {"q": "Where exactly is the store located?", "a": "Shop no 7, 8, Mount Casa, Lal Bahadur Shastri Marg, opposite Bramhala Lake, Khopat, Thane West. Tap \"Get Directions\" above for turn-by-turn navigation."},
-        {"q": "Can I check if a specific helmet or size is in stock before I come?", "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."}
+        {
+          "q": "Does the Thane store stock ISI and DOT certified helmets?",
+          "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."
+        },
+        {
+          "q": "Can I try on jackets, gloves and boots before buying?",
+          "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."
+        },
+        {
+          "q": "Where exactly is the store located?",
+          "a": "Shop no 7, 8, Mount Casa, Lal Bahadur Shastri Marg, opposite Bramhala Lake, Khopat, Thane West. Tap \"Get Directions\" above for turn-by-turn navigation."
+        },
+        {
+          "q": "Can I check if a specific helmet or size is in stock before I come?",
+          "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."
+        }
+      ],
+      "gallery": [
+        {
+          "file": "assets/img/stores/thane/thane-1.jpg",
+          "alt": "Helmet display wall at a Bikester Global store"
+        },
+        {
+          "file": "assets/img/stores/thane/thane-2.jpg",
+          "alt": "Full-face helmet wall at a Bikester Global store"
+        },
+        {
+          "file": "assets/img/stores/thane/thane-3.jpg",
+          "alt": "Touring pannier and top-box display at a Bikester Global store"
+        }
       ]
     },
     {
       "slug": "navi-mumbai",
       "name": "Bikester Global - Navi Mumbai",
       "area": "Nerul (Seawoods)",
-      "address_lines": ["Shop No 7, Shree Om Sadguru CHS Ltd, Plot No 122", "Sector 50 E, Seawoods, West", "Nerul, Navi Mumbai, Maharashtra 400706"],
+      "address_lines": [
+        "Shop No 7, Shree Om Sadguru CHS Ltd, Plot No 122",
+        "Sector 50 E, Seawoods, West",
+        "Nerul, Navi Mumbai, Maharashtra 400706"
+      ],
       "landmark": "Sector 50 E, Seawoods West, Nerul",
       "phone_display": "+91 80978 65848",
       "phone_tel": "+918097865848",
@@ -161,16 +412,66 @@
       "lng": 73.0100097,
       "intro": "Bikester Global Navi Mumbai is in Sector 50 E, Seawoods West, Nerul — close enough to Palm Beach Road to cover Sanpada, Vashi and Juinagar riders without crossing the highway. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "localities": [
-        {"name": "Sanpada", "slug": "sanpada", "km": 4.4, "minutes": "12-15", "blurb": "Sanpada riders usually come down Palm Beach Road, a straightforward run to Seawoods with light traffic outside peak hours. A common stop for Palm Beach Road regulars wanting a well-ventilated helmet for the coastal stretch."},
-        {"name": "Vashi", "slug": "vashi", "km": 4.3, "minutes": "15-18", "blurb": "From Vashi, down Palm Beach Road or the Sion-Panvel Highway service road, budget fifteen to eighteen minutes depending on the APMC market traffic. Worth the trip for riders comparing touring luggage — tank bags and saddle bags are easier to judge in person."},
-        {"name": "Juinagar", "slug": "juinagar", "km": 3.4, "minutes": "10-12", "blurb": "Juinagar is a short, easy ride down to Seawoods — mostly along the service road, under fifteen minutes even with signals. A regular stop for station-area commuters picking up gloves or a quick visor swap."},
-        {"name": "CBD Belapur", "slug": "cbd-belapur", "km": 3.2, "minutes": "10-12", "blurb": "CBD Belapur riders heading to Seawoods usually take Palm Beach Road south, around ten to twelve minutes outside office rush hour. Handy for the Belapur business-district crowd swinging by after work to try on a jacket before deciding."}
+        {
+          "name": "Sanpada",
+          "slug": "sanpada",
+          "km": 4.4,
+          "minutes": "12-15",
+          "blurb": "Sanpada riders usually come down Palm Beach Road, a straightforward run to Seawoods with light traffic outside peak hours. A common stop for Palm Beach Road regulars wanting a well-ventilated helmet for the coastal stretch."
+        },
+        {
+          "name": "Vashi",
+          "slug": "vashi",
+          "km": 4.3,
+          "minutes": "15-18",
+          "blurb": "From Vashi, down Palm Beach Road or the Sion-Panvel Highway service road, budget fifteen to eighteen minutes depending on the APMC market traffic. Worth the trip for riders comparing touring luggage — tank bags and saddle bags are easier to judge in person."
+        },
+        {
+          "name": "Juinagar",
+          "slug": "juinagar",
+          "km": 3.4,
+          "minutes": "10-12",
+          "blurb": "Juinagar is a short, easy ride down to Seawoods — mostly along the service road, under fifteen minutes even with signals. A regular stop for station-area commuters picking up gloves or a quick visor swap."
+        },
+        {
+          "name": "CBD Belapur",
+          "slug": "cbd-belapur",
+          "km": 3.2,
+          "minutes": "10-12",
+          "blurb": "CBD Belapur riders heading to Seawoods usually take Palm Beach Road south, around ten to twelve minutes outside office rush hour. Handy for the Belapur business-district crowd swinging by after work to try on a jacket before deciding."
+        }
       ],
       "faqs": [
-        {"q": "Does the Navi Mumbai store stock ISI and DOT certified helmets?", "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."},
-        {"q": "Can I try on jackets, gloves and boots before buying?", "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."},
-        {"q": "Where exactly is the store located?", "a": "Shop No 7, Shree Om Sadguru CHS Ltd, Plot No 122, Sector 50 E, Seawoods West, Nerul. Tap \"Get Directions\" above for turn-by-turn navigation."},
-        {"q": "Can I check if a specific helmet or size is in stock before I come?", "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."}
+        {
+          "q": "Does the Navi Mumbai store stock ISI and DOT certified helmets?",
+          "a": "Yes. Every helmet sold is ISI marked as required by Indian law, with ECE and DOT certified options from LS2 and other brands across full-face, modular and open-face styles."
+        },
+        {
+          "q": "Can I try on jackets, gloves and boots before buying?",
+          "a": "Yes — walk in and test-fit anything in-store. Sizing isn't identical across brands, so we fit you at the counter instead of you guessing a size online."
+        },
+        {
+          "q": "Where exactly is the store located?",
+          "a": "Shop No 7, Shree Om Sadguru CHS Ltd, Plot No 122, Sector 50 E, Seawoods West, Nerul. Tap \"Get Directions\" above for turn-by-turn navigation."
+        },
+        {
+          "q": "Can I check if a specific helmet or size is in stock before I come?",
+          "a": "Call or WhatsApp us the brand, model and size and we'll confirm stock before you ride down."
+        }
+      ],
+      "gallery": [
+        {
+          "file": "assets/img/stores/navi-mumbai/navi-mumbai-1.jpg",
+          "alt": "Bikester Global Navi Mumbai (Seawoods) store interior with helmet wall"
+        },
+        {
+          "file": "assets/img/stores/navi-mumbai/navi-mumbai-2.jpg",
+          "alt": "Helmet display wall at Bikester Global Navi Mumbai (Seawoods)"
+        },
+        {
+          "file": "assets/img/stores/navi-mumbai/navi-mumbai-3.jpg",
+          "alt": "Bikester Global Navi Mumbai (Seawoods) store interior, view toward the entrance"
+        }
       ]
     }
   ]
