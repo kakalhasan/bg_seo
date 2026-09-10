@@ -259,3 +259,32 @@ footer.site .fine { color: #8a8f97; }
 @media (max-width: 720px) {
   .store-detail-grid { grid-template-columns: 1fr !important; }
 }
+
+/* Rating badge (hero) */
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d8dade;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.rating-badge .stars { color: #ffb648; letter-spacing: 1px; font-size: 15px; }
+
+/* Review cards */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+.review-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.review-card p { margin: 0 0 10px; font-size: 14.5px; color: var(--ink); line-height: 1.5; }
+.review-card .reviewer { font-size: 13px; font-weight: 700; color: var(--ink-soft); }
+.stars { color: #e0a326; }

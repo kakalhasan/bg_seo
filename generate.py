@@ -46,6 +46,42 @@ def cta_row(store, context_label, extra_class=""):
 </div>"""
 
 
+def star_string(rating):
+    full = round(rating)
+    return "★" * full + "☆" * (5 - full)
+
+
+def rating_badge_html(store):
+    r = store.get("reviews")
+    if not r or r.get("rating") is None:
+        return ""
+    return f'<div class="rating-badge"><span class="stars">{star_string(r["rating"])}</span> {r["rating"]:.1f} &middot; {r["count"]:,} reviews on {e(r["source"])}</div>'
+
+
+def reviews_section_html(store):
+    r = store.get("reviews")
+    if not r:
+        return ""
+    if r.get("rating") is not None:
+        summary_line = f'<span class="stars">{star_string(r["rating"])}</span> <strong>{r["rating"]:.1f} out of 5</strong> &middot; {r["count"]:,} reviews on <a href="{r["source_url"]}" target="_blank" rel="noopener nofollow">{e(r["source"])}</a>'
+    else:
+        summary_line = f'<strong>{r["count"]:,} reviews</strong> on <a href="{r["source_url"]}" target="_blank" rel="noopener nofollow">{e(r["source"])}</a>'
+    cards = "".join(
+        f"""<div class="review-card"><p>&ldquo;{e(q['text'])}&rdquo;</p><span class="reviewer">&mdash; {e(q['name'])}</span></div>"""
+        for q in r.get("quotes", [])
+    )
+    cards_html = f'<div class="review-grid">{cards}</div>' if cards else ""
+    empty_note = "" if cards else "<p class=\"section-sub\">Individual review text isn't pulled through automatically yet for this store &mdash; the rating and count above are real, sourced live.</p>"
+    return f"""<section>
+  <div class="wrap">
+    <h2>What riders say &mdash; {e(store['area'])}</h2>
+    <p class="section-sub">{summary_line}</p>
+    {cards_html}
+    {empty_note}
+  </div>
+</section>"""
+
+
 def mobile_cta_bar(store):
     wa_text = f"Hi, I'd like to visit Bikester Global {store['area']} for riding gear."
     return f"""<div class="mobile-cta-bar">
@@ -120,7 +156,35 @@ def store_schema(store):
         },
         "areaServed": [{"@type": "Place", "name": loc["name"]} for loc in store["localities"]] + [{"@type": "Place", "name": store["area"]}],
         "parentOrganization": {"@type": "Organization", "name": "Bikester Global", "url": BRAND["parent_url"]},
+        **review_schema_fields(store),
     }
+
+
+def review_schema_fields(store):
+    """aggregateRating/review fields for a store's schema block, built only from
+    real, sourced review data in data/stores.json (see reviews.source_url) —
+    never fabricated."""
+    r = store.get("reviews")
+    if not r:
+        return {}
+    fields = {}
+    if r.get("rating") is not None:
+        fields["aggregateRating"] = {
+            "@type": "AggregateRating",
+            "ratingValue": r["rating"],
+            "reviewCount": r["count"],
+        }
+    if r.get("quotes"):
+        fields["review"] = [
+            {
+                "@type": "Review",
+                "author": {"@type": "Person", "name": q["name"]},
+                "reviewBody": q["text"],
+                **({"reviewRating": {"@type": "Rating", "ratingValue": r["rating"]}} if r.get("rating") is not None else {}),
+            }
+            for q in r["quotes"]
+        ]
+    return fields
 
 
 def faq_schema(faqs):
@@ -276,6 +340,7 @@ def build_store_pages():
       <a href="../../index.html" style="color:#b7bac0;">Home</a> / {e(s['area'])}
     </div>
     <h1>Helmet &amp; Riding Gear Store in {e(s['area'])}</h1>
+    {rating_badge_html(s)}
     <p class="lead">{e(s['intro'])}</p>
     {cta_row(s, s['area'])}
   </div>
@@ -290,6 +355,8 @@ def build_store_pages():
     </div>
   </div>
 </section>
+
+{reviews_section_html(s)}
 
 <section class="alt">
   <div class="wrap">
