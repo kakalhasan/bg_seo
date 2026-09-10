@@ -23,6 +23,7 @@ STORES = DATA["stores"]
 DOMAIN = BRAND["domain"]
 BASE_URL = f"https://{DOMAIN}"
 TODAY = datetime.date.today().isoformat()
+GA_MEASUREMENT_ID = "G-YDZ999QEZ9"
 
 OUT_PAGES = []  # (path, lastmod, priority) for sitemap
 
@@ -318,6 +319,13 @@ def render_full_page(title, description, canonical_path, body, depth, schema_lis
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 <link rel="canonical" href="{BASE_URL}/{canonical_path}">
