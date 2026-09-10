@@ -100,6 +100,20 @@ def gallery_html(store):
 </section>"""
 
 
+def video_section_html(store):
+    yt = store.get("youtube_id")
+    if not yt:
+        return ""
+    return f"""<section>
+  <div class="wrap">
+    <h2>Store tour &mdash; {e(store['area'])}</h2>
+    <div class="video-embed">
+      <iframe loading="lazy" src="https://www.youtube.com/embed/{yt}" title="Bikester Global {e(store['area'])} store tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>"""
+
+
 def mobile_cta_bar(store):
     wa_text = f"Hi, I'd like to visit Bikester Global {store['area']} for riding gear."
     return f"""<div class="mobile-cta-bar">
@@ -378,6 +392,8 @@ def build_store_pages():
 </section>
 
 {gallery_html(s)}
+
+{video_section_html(s)}
 
 {reviews_section_html(s)}
 

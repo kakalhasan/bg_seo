@@ -34,9 +34,9 @@
       "phone_display": "+91 88287 73484",
       "phone_tel": "+918828773484",
       "whatsapp_number": "918828773484",
-      "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+malad",
-      "lat": 19.1792577,
-      "lng": 72.8357245,
+      "maps_url": "https://maps.app.goo.gl/xVEg9BuXthdRfWYa7",
+      "lat": 19.1786726,
+      "lng": 72.8365407,
       "intro": "Bikester Global Malad sits right on Chincholi Bunder Road, next to Tata Motors — an easy stop whether you're cutting through on the Link Road or coming off the Western Express Highway. Walk in for ECE and DOT certified full-face and modular helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other brands riders already trust. Every helmet gets test-fitted on your head at the counter — we don't sell you a size off a chart.",
       "reviews": {
         "rating": 4.7,
@@ -73,7 +73,7 @@
         {
           "name": "Goregaon West",
           "slug": "goregaon-west",
-          "km": 1.9,
+          "km": 1.8,
           "minutes": "7-10",
           "blurb": "Goregaon West — Oberoi Mall, Aarey Road, Link Road — is barely ten minutes from the Malad store. A lot of our Goregaon regulars ride down on their lunch break to swap a scratched visor or pick up gloves before a weekend trip. Chincholi Bunder Road connects straight through, no real traffic snarl between the two."
         },
@@ -87,7 +87,7 @@
         {
           "name": "Marve Road",
           "slug": "marve-road",
-          "km": 2.1,
+          "km": 2.2,
           "minutes": "7-10",
           "blurb": "If you're based along Marve Road and riding out toward Aksa or Madh Island on weekends, swing by the Malad store first — get your helmet's visor and ventilation checked before a long ride, not after. It's a short, straight hop down to Chincholi Bunder Road."
         },
@@ -134,7 +134,8 @@
           "file": "assets/img/stores/malad/malad-4.jpg",
           "alt": "Touring luggage and tank bag wall at Bikester Global Malad"
         }
-      ]
+      ],
+      "youtube_id": "-JpeDPNvzx8"
     },
     {
       "slug": "santacruz",
@@ -149,9 +150,9 @@
       "phone_display": "+91 79779 63846",
       "phone_tel": "+917977963846",
       "whatsapp_number": "917977963846",
-      "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+santacruz",
-      "lat": 19.0844004,
-      "lng": 72.8372899,
+      "maps_url": "https://maps.app.goo.gl/34GjBmL9cDW3k1s57",
+      "lat": 19.086455,
+      "lng": 72.8358556,
       "intro": "Bikester Global Santacruz is tucked into VM Bhargav Road in Santacruz West, a short ride off SV Road — easy to reach for riders across the western suburbs corridor from Vile Parle down to Bandra. The shop carries ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established names, with every helmet test-fitted before you buy.",
       "reviews": {
         "rating": null,
@@ -164,28 +165,28 @@
         {
           "name": "Vile Parle West",
           "slug": "vile-parle-west",
-          "km": 2.2,
+          "km": 2.0,
           "minutes": "7-10",
           "blurb": "Vile Parle West riders — including the college crowd around Parle campuses — usually come down SV Road, a straight eight-minute ride to VM Bhargav Road. A regular stop for first-time riders picking their first ISI-marked helmet."
         },
         {
           "name": "Khar West",
           "slug": "khar-west",
-          "km": 1.8,
+          "km": 2.0,
           "minutes": "6-8",
           "blurb": "Khar West is one of the closest localities to the Santacruz store — down Linking Road and a quick cut onto VM Bhargav Road, under ten minutes on a normal traffic day. Handy for a fast in-and-out gear check between errands."
         },
         {
           "name": "Bandra West",
           "slug": "bandra-west",
-          "km": 3.0,
+          "km": 3.2,
           "minutes": "10-12",
           "blurb": "From Bandra West — Linking Road, Turner Road, Pali Hill — it's about ten to twelve minutes down to Santacruz, mostly along Linking Road itself. A common stop for riders upgrading from a stock helmet to a proper ECE-rated one before longer highway runs."
         },
         {
           "name": "Andheri West",
           "slug": "andheri-west",
-          "km": 3.7,
+          "km": 3.4,
           "minutes": "12-15",
           "blurb": "Andheri West riders coming down SV Road hit some signal traffic near Vile Parle, so budget closer to fifteen minutes. Worth it if you want to physically compare glove and boot sizes across brands rather than order two sizes online and return one."
         }
@@ -225,7 +226,8 @@
           "file": "assets/img/stores/santacruz/santacruz-4.jpg",
           "alt": "Riding gloves and accessories wall at Bikester Global Santacruz"
         }
-      ]
+      ],
+      "youtube_id": "rn_e-Z55Peo"
     },
     {
       "slug": "mira-road",
@@ -240,9 +242,9 @@
       "phone_display": "+91 93263 52575",
       "phone_tel": "+919326352575",
       "whatsapp_number": "919326352575",
-      "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+miraroad",
-      "lat": 19.2813896,
-      "lng": 72.858639,
+      "maps_url": "https://maps.app.goo.gl/P2nXeDPWdd2ysG8v6",
+      "lat": 19.2843751,
+      "lng": 72.8772246,
       "intro": "Bikester Global Mira Road sits inside Salasar Exotica in Gaurav Sankalp, Phase 1, right next to GCC North Lawn on Mira Road East — a short ride for riders across Mira-Bhayandar. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": null,
@@ -255,23 +257,23 @@
         {
           "name": "Bhayandar East",
           "slug": "bhayandar-east",
-          "km": 2.0,
+          "km": 2.2,
           "minutes": "8-10",
           "blurb": "Bhayandar East riders — around the station and New Golden Nest — usually come down via the Mira Bhayandar Road, about eight to ten minutes to Gaurav Sankalp. A regular stop for daily station commuters upgrading to a proper riding jacket."
         },
         {
           "name": "Naya Nagar",
           "slug": "naya-nagar",
-          "km": 0.4,
-          "minutes": "2-3",
-          "blurb": "Naya Nagar is essentially the same neighbourhood — a two-minute ride, sometimes faster to walk over. If your helmet's visor pin snapped on the way home, this is the closest place to sort it same day."
+          "km": 2.1,
+          "minutes": "8-10",
+          "blurb": "Naya Nagar is a short hop down the Mira Bhayandar Road, usually under ten minutes. If your helmet's visor pin snapped on the way home, it's an easy detour to sort it same day rather than waiting on a courier."
         },
         {
           "name": "Kashimira",
           "slug": "kashimira",
-          "km": 2.7,
-          "minutes": "10-12",
-          "blurb": "From Kashimira, down the Mira Bhayandar Road toward Ghodbunder, it's a straightforward ten-to-twelve-minute ride. Worth the stop if you're heading out toward Ghodbunder Road or further up the Mumbai-Ahmedabad highway and want your gear checked first."
+          "km": 1.4,
+          "minutes": "6-8",
+          "blurb": "Kashimira is actually one of the closest localities to the Mira Road store — a quick six-to-eight-minute ride down the Mira Bhayandar Road toward Ghodbunder. Worth the stop if you're heading out toward Ghodbunder Road or further up the Mumbai-Ahmedabad highway and want your gear checked first."
         }
       ],
       "faqs": [
@@ -305,7 +307,8 @@
           "file": "assets/img/stores/mira-road/mira-road-3.jpg",
           "alt": "Bikester Global Mira Road store interior, luggage and jackets section"
         }
-      ]
+      ],
+      "youtube_id": "q4WjVDVH0FA"
     },
     {
       "slug": "thane",
@@ -320,9 +323,9 @@
       "phone_display": "+91 86919 35938",
       "phone_tel": "+918691935938",
       "whatsapp_number": "918691935938",
-      "maps_url": "https://www.google.com/maps/dir/?api=1&destination=bikester+global+thane",
-      "lat": 19.2028237,
-      "lng": 72.9721946,
+      "maps_url": "https://maps.app.goo.gl/QomSrKiNqamNCA59A",
+      "lat": 19.201555,
+      "lng": 72.9749461,
       "intro": "Bikester Global Thane is on Lal Bahadur Shastri Marg in Khopat, opposite Bramhala Lake — central enough to cover Naupada, Majiwada and Vartak Nagar without a long ride. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": 4.5,
@@ -335,7 +338,7 @@
         {
           "name": "Naupada",
           "slug": "naupada",
-          "km": 1.5,
+          "km": 1.4,
           "minutes": "6-8",
           "blurb": "Naupada is about as central-Thane as it gets — down Gokhale Road and onto LBS Marg, under ten minutes to Khopat. A common stop for riders in the market area picking up a first helmet or replacing a cracked visor."
         },
@@ -349,14 +352,14 @@
         {
           "name": "Vartak Nagar",
           "slug": "vartak-nagar",
-          "km": 1.7,
+          "km": 2.0,
           "minutes": "7-9",
           "blurb": "From Vartak Nagar, near the Eastern Express Highway junction, it's a quick run down to Khopat — handy if you're commuting on the EEH daily and want gear that actually fits instead of whatever was left on the shelf."
         },
         {
           "name": "Thane East",
           "slug": "thane-east",
-          "km": 2.7,
+          "km": 2.5,
           "minutes": "12-15",
           "blurb": "Thane East riders — around Kopri and the station — cross over via the station bridge or Kachrali, so budget closer to fifteen minutes depending on the time of day. A regular stop for station-area commuters looking to upgrade from a stock two-wheeler helmet."
         }
@@ -392,7 +395,8 @@
           "file": "assets/img/stores/thane/thane-3.jpg",
           "alt": "Touring pannier and top-box display at a Bikester Global store"
         }
-      ]
+      ],
+      "youtube_id": "f1Xdxj77yUE"
     },
     {
       "slug": "navi-mumbai",
@@ -417,12 +421,30 @@
         "source": "Google",
         "source_url": "https://maps.app.goo.gl/cC7LxiMRCkW2aAfa6",
         "quotes": [
-          {"name": "Nikhil Narvekar", "text": "I had a great experience shopping at Bikester Global, Seawoods. I initially purchased a pair of riding gloves, but later needed to exchange them for another product. The store staff were extremely helpful and handled the entire exchange process smoothly and professionally, making it a completely hassle-free experience. The store offers a wide range of high-quality riding gear, and the team is knowledgeable, courteous, and customer-focused."},
-          {"name": "Rahul Lalwani", "text": "So Bikester Global just opened a store in Nerul, Navi Mumbai. In the city I live, landed on the opening day and was helped really well by Akash to choose the right gloves."},
-          {"name": "Yogesh Mutkiri", "text": "Great experience at Bikester Global Seawoods branch. I bought the LS2 Storm 2 and their executive Akash did an excellent job helping me find the best fit and best graphics."},
-          {"name": "Krish Patil", "text": "Great experience with great prices, very loving staff, helped out a lot — quite a lot of helmets, gloves and accessories available at great price. Loved it."},
-          {"name": "Saurabh K", "text": "Great shopping experience with Bikester Global. The product was genuine, staff is extremely helpful."},
-          {"name": "Shraval Gangurde", "text": "Awesome shop, variety of gears available, helpful and polite staff."}
+          {
+            "name": "Nikhil Narvekar",
+            "text": "I had a great experience shopping at Bikester Global, Seawoods. I initially purchased a pair of riding gloves, but later needed to exchange them for another product. The store staff were extremely helpful and handled the entire exchange process smoothly and professionally, making it a completely hassle-free experience. The store offers a wide range of high-quality riding gear, and the team is knowledgeable, courteous, and customer-focused."
+          },
+          {
+            "name": "Rahul Lalwani",
+            "text": "So Bikester Global just opened a store in Nerul, Navi Mumbai. In the city I live, landed on the opening day and was helped really well by Akash to choose the right gloves."
+          },
+          {
+            "name": "Yogesh Mutkiri",
+            "text": "Great experience at Bikester Global Seawoods branch. I bought the LS2 Storm 2 and their executive Akash did an excellent job helping me find the best fit and best graphics."
+          },
+          {
+            "name": "Krish Patil",
+            "text": "Great experience with great prices, very loving staff, helped out a lot — quite a lot of helmets, gloves and accessories available at great price. Loved it."
+          },
+          {
+            "name": "Saurabh K",
+            "text": "Great shopping experience with Bikester Global. The product was genuine, staff is extremely helpful."
+          },
+          {
+            "name": "Shraval Gangurde",
+            "text": "Awesome shop, variety of gears available, helpful and polite staff."
+          }
         ]
       },
       "localities": [
@@ -486,7 +508,8 @@
           "file": "assets/img/stores/navi-mumbai/navi-mumbai-3.jpg",
           "alt": "Bikester Global Navi Mumbai (Seawoods) store interior, view toward the entrance"
         }
-      ]
+      ],
+      "youtube_id": "SicjnodNKyU"
     }
   ]
 }
