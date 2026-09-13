@@ -13,6 +13,7 @@ To add a new locality or store later: edit data/stores.json, then re-run this sc
 """
 import json
 import os
+import re
 import html
 import datetime
 
@@ -166,7 +167,22 @@ def org_schema():
     }
 
 
+def postal_code(store):
+    m = re.search(r"\b(\d{6})\b", store["address_lines"][-1])
+    return m.group(1) if m else None
+
+
 def store_schema(store):
+    address = {
+        "@type": "PostalAddress",
+        "streetAddress": ", ".join(store["address_lines"][:-1]),
+        "addressLocality": store["area"],
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN",
+    }
+    pin = postal_code(store)
+    if pin:
+        address["postalCode"] = pin
     return {
         "@context": "https://schema.org",
         "@type": "SportingGoodsStore",
@@ -175,13 +191,7 @@ def store_schema(store):
         "telephone": store["phone_tel"],
         "url": f"{BASE_URL}/stores/{store['slug']}/",
         "priceRange": "₹₹",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": ", ".join(store["address_lines"][:-1]),
-            "addressLocality": store["area"],
-            "addressRegion": "Maharashtra",
-            "addressCountry": "IN",
-        },
+        "address": address,
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": store["lat"],
@@ -311,9 +321,11 @@ def build_index():
     OUT_PAGES.append(("", TODAY, "1.0"))
 
 
-def render_full_page(title, description, canonical_path, body, depth, schema_list, extra_head=""):
+def render_full_page(title, description, canonical_path, body, depth, schema_list, extra_head="", og_image=None):
     root = "../" * depth if depth else "./"
     schema_tag = "\n".join(f'<script type="application/ld+json">{json.dumps(s)}</script>' for s in schema_list)
+    image_url = og_image or f"{BASE_URL}/assets/img/icon-512.png"
+    twitter_card = "summary_large_image" if og_image else "summary"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -337,8 +349,9 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 <meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{BASE_URL}/{canonical_path}">
-<meta property="og:image" content="{BASE_URL}/assets/img/icon-512.png">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{image_url}">
+<meta name="twitter:card" content="{twitter_card}">
+<meta name="twitter:image" content="{image_url}">
 {extra_head}
 {schema_tag}
 </head>
@@ -426,10 +439,12 @@ def build_store_pages():
             faq_schema(s["faqs"]),
             breadcrumb_schema([("Home", BASE_URL + "/"), (s["area"], f"{BASE_URL}/{canonical}")]),
         ]
+        store_photo = s.get("gallery", [{}])[0].get("file")
         write(f"stores/{s['slug']}/index.html", render_full_page(
             title=f"Helmet Store in {s['area']} | Bikester Global {s['area']}",
             description=f"Bikester Global {s['area']}: helmet & riding gear near {s['landmark']}. ECE/DOT certified gear, walk-ins welcome.",
             canonical_path=canonical, body=body, depth=2, schema_list=schema_list,
+            og_image=f"{BASE_URL}/{store_photo}" if store_photo else None,
         ))
         OUT_PAGES.append((canonical, TODAY, "0.9"))
 
@@ -502,10 +517,12 @@ def build_locality_pages():
                     (loc["name"], f"{BASE_URL}/{canonical}"),
                 ]),
             ]
+            loc_store_photo = s.get("gallery", [{}])[0].get("file")
             write(f"near/{s['slug']}/{loc['slug']}/index.html", render_full_page(
                 title=f"Helmet Store Near {loc['name']} | Bikester Global {s['area']}",
                 description=f"Helmet & riding gear near {loc['name']}: Bikester Global {s['area']} is {loc['km']} km away (~{loc['minutes']} min ride). ECE/DOT certified gear, walk-ins welcome.",
                 canonical_path=canonical, body=body, depth=3, schema_list=schema_list,
+                og_image=f"{BASE_URL}/{loc_store_photo}" if loc_store_photo else None,
             ))
             OUT_PAGES.append((canonical, TODAY, "0.8"))
 
