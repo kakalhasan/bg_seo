@@ -305,7 +305,7 @@ def build_index():
 """
     write("index.html", render_full_page(
         title=f"Helmet & Riding Gear Store Near Me | Bikester Global — {len(STORES)} Mumbai Stores",
-        description="Walk-in helmet and riding gear stores in Malad, Santacruz, Mira Road, Thane and Navi Mumbai. ECE/DOT certified helmets, jackets, gloves, boots and luggage from LS2, Crank1 and more. Call, get directions, or WhatsApp your nearest store.",
+        description="Walk-in helmet and riding gear stores in Malad, Santacruz, Mira Road, Thane and Navi Mumbai. ECE/DOT certified helmets, jackets, gloves, boots & luggage.",
         canonical_path="", body=body, depth=0, schema_list=[org_schema()] + [store_schema(s) for s in STORES]
     ))
     OUT_PAGES.append(("", TODAY, "1.0"))
@@ -428,7 +428,7 @@ def build_store_pages():
         ]
         write(f"stores/{s['slug']}/index.html", render_full_page(
             title=f"Helmet Store in {s['area']} | Bikester Global {s['area']}",
-            description=f"Bikester Global {s['area']} — walk-in helmet & riding gear store near {s['landmark']}. ECE/DOT certified helmets, jackets, gloves, boots, luggage. Call {s['phone_display']} or get directions.",
+            description=f"Bikester Global {s['area']}: helmet & riding gear near {s['landmark']}. ECE/DOT certified gear, walk-ins welcome.",
             canonical_path=canonical, body=body, depth=2, schema_list=schema_list,
         ))
         OUT_PAGES.append((canonical, TODAY, "0.9"))
@@ -504,7 +504,7 @@ def build_locality_pages():
             ]
             write(f"near/{s['slug']}/{loc['slug']}/index.html", render_full_page(
                 title=f"Helmet Store Near {loc['name']} | Bikester Global {s['area']}",
-                description=f"Looking for a helmet or riding gear store near {loc['name']}? Bikester Global {s['area']} is {loc['km']} km away (~{loc['minutes']} min ride). ECE/DOT certified helmets, jackets, gloves, boots, luggage. Call, get directions or WhatsApp.",
+                description=f"Helmet & riding gear near {loc['name']}: Bikester Global {s['area']} is {loc['km']} km away (~{loc['minutes']} min ride). ECE/DOT certified gear, walk-ins welcome.",
                 canonical_path=canonical, body=body, depth=3, schema_list=schema_list,
             ))
             OUT_PAGES.append((canonical, TODAY, "0.8"))
