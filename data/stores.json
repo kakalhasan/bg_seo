@@ -18,7 +18,16 @@
       "LS2",
       "Crank1",
       "MadDog"
-    ]
+    ],
+    "sameAs": [
+      "https://www.youtube.com/@bikesterglobal",
+      "https://www.facebook.com/bikesterglobal.shop/",
+      "https://www.instagram.com/bikesterglobal.shop/"
+    ],
+    "policies": {
+      "emi": "no-cost EMI available",
+      "returns": "7-day, no-questions-asked return or exchange on any purchase"
+    }
   },
   "stores": [
     {
@@ -30,13 +39,21 @@
         "next to TATA Motors, Ram Nagar",
         "Malad West, Mumbai, Maharashtra 400064"
       ],
-      "landmark": "next to Tata Motors on Chincholi Bunder Road",
+      "landmark": "Tata Motors, Chincholi Bunder Road",
       "phone_display": "+91 88287 73484",
       "phone_tel": "+918828773484",
       "whatsapp_number": "918828773484",
       "maps_url": "https://maps.app.goo.gl/xVEg9BuXthdRfWYa7",
       "lat": 19.1786726,
       "lng": 72.8365407,
+      "hours": {
+        "display": "11 am – 9 pm, all 7 days",
+        "opens": "11:00",
+        "closes": "21:00",
+        "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+        "source": "bikesterglobal.com",
+        "source_url": "https://bikesterglobal.com/pages/malad-store"
+      },
       "intro": "Bikester Global Malad sits right on Chincholi Bunder Road, next to Tata Motors — an easy stop whether you're cutting through on the Link Road or coming off the Western Express Highway. Walk in for ECE and DOT certified full-face and modular helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other brands riders already trust. Every helmet gets test-fitted on your head at the counter — we don't sell you a size off a chart.",
       "reviews": {
         "rating": 4.7,
@@ -146,13 +163,21 @@
         "VM Bhargav Road",
         "Santacruz West, Mumbai, Maharashtra 400054"
       ],
-      "landmark": "on VM Bhargav Road, Santacruz West",
+      "landmark": "VM Bhargav Road, Santacruz West",
       "phone_display": "+91 79779 63846",
       "phone_tel": "+917977963846",
       "whatsapp_number": "917977963846",
       "maps_url": "https://maps.app.goo.gl/34GjBmL9cDW3k1s57",
       "lat": 19.086455,
       "lng": 72.8358556,
+      "hours": {
+        "display": "11 am – 9 pm, all 7 days",
+        "opens": "11:00",
+        "closes": "21:00",
+        "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+        "source": "bikesterglobal.com",
+        "source_url": "https://bikesterglobal.com/pages/santacruz-store"
+      },
       "intro": "Bikester Global Santacruz is tucked into VM Bhargav Road in Santacruz West, a short ride off SV Road — easy to reach for riders across the western suburbs corridor from Vile Parle down to Bandra. The shop carries ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established names, with every helmet test-fitted before you buy.",
       "reviews": {
         "rating": null,
@@ -238,13 +263,21 @@
         "next to GCC North Lawn, behind GCC Club Road, Phase 1, Gaurav Sankalp",
         "Mira Road East, Mira Bhayandar, Maharashtra 401107"
       ],
-      "landmark": "next to GCC North Lawn, Gaurav Sankalp, Mira Road East",
+      "landmark": "GCC North Lawn, Gaurav Sankalp, Mira Road East",
       "phone_display": "+91 93263 52575",
       "phone_tel": "+919326352575",
       "whatsapp_number": "919326352575",
       "maps_url": "https://maps.app.goo.gl/P2nXeDPWdd2ysG8v6",
       "lat": 19.2843751,
       "lng": 72.8772246,
+      "hours": {
+        "display": "11 am – 9 pm, all 7 days",
+        "opens": "11:00",
+        "closes": "21:00",
+        "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+        "source": "bikesterglobal.com",
+        "source_url": "https://bikesterglobal.com/pages/miraroad-store"
+      },
       "intro": "Bikester Global Mira Road sits inside Salasar Exotica in Gaurav Sankalp, Phase 1, right next to GCC North Lawn on Mira Road East — a short ride for riders across Mira-Bhayandar. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": null,
@@ -319,13 +352,21 @@
         "opposite Bramhala Lake, Khopat, Uthalsar",
         "Thane West, Thane, Maharashtra 400601"
       ],
-      "landmark": "opposite Bramhala Lake, Khopat",
+      "landmark": "Bramhala Lake, Khopat",
       "phone_display": "+91 86919 35938",
       "phone_tel": "+918691935938",
       "whatsapp_number": "918691935938",
       "maps_url": "https://maps.app.goo.gl/QomSrKiNqamNCA59A",
       "lat": 19.201555,
       "lng": 72.9749461,
+      "hours": {
+        "display": "11 am – 9 pm, all 7 days",
+        "opens": "11:00",
+        "closes": "21:00",
+        "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+        "source": "bikesterglobal.com",
+        "source_url": "https://bikesterglobal.com/pages/thane-store"
+      },
       "intro": "Bikester Global Thane is on Lal Bahadur Shastri Marg in Khopat, opposite Bramhala Lake — central enough to cover Naupada, Majiwada and Vartak Nagar without a long ride. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": 4.5,
@@ -414,6 +455,14 @@
       "maps_url": "https://maps.app.goo.gl/cC7LxiMRCkW2aAfa6",
       "lat": 19.0120102,
       "lng": 73.0235427,
+      "hours": {
+        "display": "11 am – 9 pm, all 7 days",
+        "opens": "11:00",
+        "closes": "21:00",
+        "days": "Mo,Tu,We,Th,Fr,Sa,Su",
+        "source": "bikesterglobal.com",
+        "source_url": "https://bikesterglobal.com/pages/navi-mumbai-store"
+      },
       "intro": "Bikester Global Navi Mumbai is in Sector 50 E, Seawoods West, Nerul, just off Palm Beach Road — closest to CBD Belapur, with Juinagar, Sanpada and Vashi riders a straightforward run up Palm Beach Road away. Stock includes ECE and DOT certified helmets, riding jackets, gloves, boots and touring luggage from LS2, Crank1 and other established brands, with every helmet fitted in-store before you buy.",
       "reviews": {
         "rating": null,

@@ -64,14 +64,14 @@ Site: 26 pages (1 homepage + 5 store pages + 20 locality pages) generated from `
 
 | Finding | Category | Action Taken (auto-fixed / new page added / needs human) | Notes |
 |---|---|---|---|
-| Full technical/schema/AEO/E-E-A-T sweep | All | No action needed | Re-verified every check from the 09-13 run against current output; all green, no regressions, no new mechanical issues |
-| No new locality page added this run | Local Reach | Blocked | Network access to nominatim/site blocked by sandbox policy (403), same as 09-13 |
+| No `openingHours` anywhere | Schema | **Resolved by user, 2026-09-15** | User confirmed 11am–9pm, all 7 days, for all 5 stores. Malad/Santacruz/Thane/Navi Mumbai hours independently cross-checked against bikesterglobal.com's own per-store pages (all matched); Mira Road's page uses a different URL slug (`miraroad-store`) and was fetched separately — also matched. Added `hours` block per store in `data/stores.json`, `openingHoursSpecification` in schema, and a visible "Hours" row on every store/locality page. |
+| No price range / EMI / warranty policy content | Platform Optimization | **Resolved by user, 2026-09-15** | User confirmed: no-cost EMI available, 7-day no-questions-asked return/exchange, and price range is deliberately not stated (SKU range too wide to be meaningful). Removed the placeholder `"priceRange": "₹₹"` from schema (was fabricated, never confirmed) rather than guessing. Added brand-wide `policies` block in `data/stores.json`, a "Payment"/"Returns" row on every store/locality page, and one FAQ item (schema + visible) per store covering EMI/returns. |
+| Full technical/schema/AEO/E-E-A-T sweep after the above changes | All | Re-verified | 81/81 JSON-LD blocks valid, 0 broken links, 26/26 meta descriptions under 160 chars and unique, all 5 stores show hours + policy rows, EMI/returns FAQ present on all 25 store+locality pages (homepage has no FAQ section by design) |
+| No new locality page added this run | Local Reach | Not attempted | This was a human-in-the-loop session, not an automated run; no locality-gap work requested |
 
 ## Carried over from previous runs
 
 | Finding | Category | Status | First flagged |
 |---|---|---|---|
-| No `openingHours` in schema anywhere | Schema | Needs human — no hours data exists in `data/stores.json` at all | 2026-09-13 |
 | FAQ set doesn't cover "nearest store to me" / brand-named questions | AEO / Platform Optimization | Needs human — new FAQ copy is a brand-voice/content decision | 2026-09-13 |
-| No price range / EMI / warranty policy content | Platform Optimization | Needs human — requires the user to confirm actual store policy | 2026-09-13 |
-| Candidate localities not yet geocoded/added: Charkop, Juhu, Bhayandar West, Ghodbunder Road corridor | Local Reach | Blocked — network access to nominatim/site unavailable in sandbox both runs so far | 2026-09-13 |
+| Candidate localities not yet geocoded/added: Charkop, Juhu, Bhayandar West, Ghodbunder Road corridor | Local Reach | Blocked — network access to nominatim/site unavailable in sandbox both automated runs so far | 2026-09-13 |

@@ -163,7 +163,7 @@ def org_schema():
         "name": "Bikester Global",
         "url": BASE_URL,
         "logo": f"{BASE_URL}/assets/img/icon-512.png",
-        "sameAs": [BRAND["parent_url"]],
+        "sameAs": [BRAND["parent_url"]] + BRAND.get("sameAs", []),
     }
 
 
@@ -190,7 +190,6 @@ def store_schema(store):
         "image": [f"{BASE_URL}/{p['file']}" for p in store.get("gallery", [])] or [f"{BASE_URL}/assets/img/icon-512.png"],
         "telephone": store["phone_tel"],
         "url": f"{BASE_URL}/stores/{store['slug']}/",
-        "priceRange": "₹₹",
         "address": address,
         "geo": {
             "@type": "GeoCoordinates",
@@ -200,7 +199,50 @@ def store_schema(store):
         "areaServed": [{"@type": "Place", "name": loc["name"]} for loc in store["localities"]] + [{"@type": "Place", "name": store["area"]}],
         "parentOrganization": {"@type": "Organization", "name": "Bikester Global", "url": BRAND["parent_url"]},
         **review_schema_fields(store),
+        **hours_schema_fields(store),
     }
+
+
+def hours_schema_fields(store):
+    """openingHoursSpecification, built only from hours confirmed on a real,
+    cited source (see hours.source_url) — omitted entirely if a store's hours
+    aren't confirmed (see README note on Mira Road)."""
+    h = store.get("hours")
+    if not h:
+        return {}
+    return {
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                {"Mo": "Monday", "Tu": "Tuesday", "We": "Wednesday", "Th": "Thursday",
+                 "Fr": "Friday", "Sa": "Saturday", "Su": "Sunday"}[d]
+                for d in h["days"].split(",")
+            ],
+            "opens": h["opens"],
+            "closes": h["closes"],
+        }
+    }
+
+
+def hours_row_html(store):
+    h = store.get("hours")
+    if not h:
+        return ""
+    return f"""<div class="row"><div class="label">Hours</div><div class="val">{e(h['display'])}</div></div>"""
+
+
+def policy_faqs():
+    """EMI/returns FAQ, confirmed directly by the store owner (uniform across
+    all stores) — appended to every store's FAQ list rather than duplicated
+    by hand in data/stores.json since it's one brand-wide policy, not
+    store-specific content."""
+    p = BRAND.get("policies")
+    if not p:
+        return []
+    return [{
+        "q": "Do you offer EMI, and what's the return/exchange policy?",
+        "a": f"Yes — {p['emi']}. We also offer a {p['returns']}.",
+    }]
 
 
 def review_schema_fields(store):
@@ -375,16 +417,20 @@ def build_store_pages():
         <h4>{e(loc['name'])}</h4>
       </a>"""
 
+        all_faqs = s["faqs"] + policy_faqs()
         faq_html = "".join(
             f"""<div class="faq-item"><h3>{e(f['q'])}</h3><p>{e(f['a'])}</p></div>"""
-            for f in s["faqs"]
+            for f in all_faqs
         )
 
         info_rows = f"""<div class="row"><div class="label">Address</div><div class="val">{e(', '.join(s['address_lines']))}</div></div>
       <div class="row"><div class="label">Phone</div><div class="val"><a href="tel:{s['phone_tel']}">{e(s['phone_display'])}</a></div></div>
       <div class="row"><div class="label">Landmark</div><div class="val">{e(s['landmark'])}</div></div>
+      {hours_row_html(s)}
       <div class="row"><div class="label">Categories</div><div class="val">{e(', '.join(BRAND['categories']))}</div></div>
-      <div class="row"><div class="label">Brands</div><div class="val">{e(', '.join(BRAND['brands_carried']))} &amp; more</div></div>"""
+      <div class="row"><div class="label">Brands</div><div class="val">{e(', '.join(BRAND['brands_carried']))} &amp; more</div></div>
+      <div class="row"><div class="label">Payment</div><div class="val">{e(BRAND['policies']['emi'])}</div></div>
+      <div class="row"><div class="label">Returns</div><div class="val">{e(BRAND['policies']['returns'])}</div></div>"""
 
         map_embed = f"""<div class="map-embed">
         <iframe loading="lazy" src="https://maps.google.com/maps?q={s['lat']},{s['lng']}&z=15&output=embed" allowfullscreen></iframe>
@@ -436,7 +482,7 @@ def build_store_pages():
         canonical = f"stores/{s['slug']}/"
         schema_list = [
             store_schema(s),
-            faq_schema(s["faqs"]),
+            faq_schema(all_faqs),
             breadcrumb_schema([("Home", BASE_URL + "/"), (s["area"], f"{BASE_URL}/{canonical}")]),
         ]
         store_photo = s.get("gallery", [{}])[0].get("file")
@@ -462,9 +508,10 @@ def build_locality_pages():
         </a>"""
                 for l in other_locs
             )
+            loc_all_faqs = s["faqs"] + policy_faqs()
             faq_html = "".join(
                 f"""<div class="faq-item"><h3>{e(f['q'])}</h3><p>{e(f['a'])}</p></div>"""
-                for f in s["faqs"]
+                for f in loc_all_faqs
             )
             body = f"""<div class="hero">
   <div class="wrap">
@@ -488,7 +535,10 @@ def build_locality_pages():
       <div class="row"><div class="label">Address</div><div class="val">{e(', '.join(s['address_lines']))}</div></div>
       <div class="row"><div class="label">Phone</div><div class="val"><a href="tel:{s['phone_tel']}">{e(s['phone_display'])}</a></div></div>
       <div class="row"><div class="label">Distance from {e(loc['name'])}</div><div class="val">{loc['km']} km (~{loc['minutes']} min ride)</div></div>
+      {hours_row_html(s)}
       <div class="row"><div class="label">In stock</div><div class="val">{e(', '.join(BRAND['categories']))}</div></div>
+      <div class="row"><div class="label">Payment</div><div class="val">{e(BRAND['policies']['emi'])}</div></div>
+      <div class="row"><div class="label">Returns</div><div class="val">{e(BRAND['policies']['returns'])}</div></div>
     </div>
   </div>
 </section>
@@ -510,7 +560,7 @@ def build_locality_pages():
             canonical = f"near/{s['slug']}/{loc['slug']}/"
             schema_list = [
                 store_schema(s),
-                faq_schema(s["faqs"]),
+                faq_schema(loc_all_faqs),
                 breadcrumb_schema([
                     ("Home", BASE_URL + "/"),
                     (s["area"], f"{BASE_URL}/stores/{s['slug']}/"),
