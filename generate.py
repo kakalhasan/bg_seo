@@ -232,17 +232,21 @@ def hours_row_html(store):
 
 
 def policy_faqs():
-    """EMI/returns FAQ, confirmed directly by the store owner (uniform across
-    all stores) — appended to every store's FAQ list rather than duplicated
-    by hand in data/stores.json since it's one brand-wide policy, not
-    store-specific content."""
+    """Brand-wide FAQ (policy + brand-entity coverage), appended to every
+    store's FAQ list rather than duplicated by hand in data/stores.json
+    since this content is uniform across all 5 stores, not store-specific."""
+    faqs = []
     p = BRAND.get("policies")
-    if not p:
-        return []
-    return [{
-        "q": "Do you offer EMI, and what's the return/exchange policy?",
-        "a": f"Yes — {p['emi']}. We also offer a {p['returns']}.",
-    }]
+    if p:
+        faqs.append({
+            "q": "Do you offer EMI, and what's the return/exchange policy?",
+            "a": f"Yes — {p['emi']}. We also offer a {p['returns']}.",
+        })
+    faqs.append({
+        "q": "Which helmet and riding gear brands do you stock?",
+        "a": f"{', '.join(BRAND['brands_carried'])} and other established riding gear brands — helmets, riding jackets, gloves, boots, touring luggage and bike accessories.",
+    })
+    return faqs
 
 
 def review_schema_fields(store):
@@ -356,8 +360,8 @@ def build_index():
 </section>
 """
     write("index.html", render_full_page(
-        title=f"Helmet & Riding Gear Store Near Me | Bikester Global — {len(STORES)} Mumbai Stores",
-        description="Walk-in helmet and riding gear stores in Malad, Santacruz, Mira Road, Thane and Navi Mumbai. ECE/DOT certified helmets, jackets, gloves, boots & luggage.",
+        title="Helmet & Riding Gear Store Near Me | Bikester Global",
+        description="Walk-in helmet & riding gear stores in Mumbai & Navi Mumbai. ECE/DOT certified gear — helmets, jackets, gloves, boots, luggage.",
         canonical_path="", body=body, depth=0, schema_list=[org_schema()] + [store_schema(s) for s in STORES]
     ))
     OUT_PAGES.append(("", TODAY, "1.0"))
@@ -487,8 +491,8 @@ def build_store_pages():
         ]
         store_photo = s.get("gallery", [{}])[0].get("file")
         write(f"stores/{s['slug']}/index.html", render_full_page(
-            title=f"Helmet Store in {s['area']} | Bikester Global {s['area']}",
-            description=f"Bikester Global {s['area']}: helmet & riding gear near {s['landmark']}. ECE/DOT certified gear, walk-ins welcome.",
+            title=f"Bikester Global {s['area']} — Helmet Store",
+            description=f"Bikester Global {s['area']}: helmet & riding gear near {s['landmark']}. ECE/DOT gear, walk-ins welcome.",
             canonical_path=canonical, body=body, depth=2, schema_list=schema_list,
             og_image=f"{BASE_URL}/{store_photo}" if store_photo else None,
         ))
@@ -569,8 +573,8 @@ def build_locality_pages():
             ]
             loc_store_photo = s.get("gallery", [{}])[0].get("file")
             write(f"near/{s['slug']}/{loc['slug']}/index.html", render_full_page(
-                title=f"Helmet Store Near {loc['name']} | Bikester Global {s['area']}",
-                description=f"Helmet & riding gear near {loc['name']}: Bikester Global {s['area']} is {loc['km']} km away (~{loc['minutes']} min ride). ECE/DOT certified gear, walk-ins welcome.",
+                title=f"Helmet Store Near {loc['name']} | Bikester Global",
+                description=f"Helmet & riding gear near {loc['name']}: Bikester Global {s['area']}, {loc['km']} km away. ECE/DOT gear, walk-ins welcome.",
                 canonical_path=canonical, body=body, depth=3, schema_list=schema_list,
                 og_image=f"{BASE_URL}/{loc_store_photo}" if loc_store_photo else None,
             ))
