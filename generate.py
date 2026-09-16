@@ -264,12 +264,15 @@ def review_schema_fields(store):
             "reviewCount": r["count"],
         }
     if r.get("quotes"):
+        # No per-review star rating exists in the source data (only the store's
+        # aggregate). Omit reviewRating rather than assign the aggregate value
+        # to each individual review, which would assert a specific rating we
+        # don't actually have for that reviewer.
         fields["review"] = [
             {
                 "@type": "Review",
                 "author": {"@type": "Person", "name": q["name"]},
                 "reviewBody": q["text"],
-                **({"reviewRating": {"@type": "Rating", "ratingValue": r["rating"]}} if r.get("rating") is not None else {}),
             }
             for q in r["quotes"]
         ]
