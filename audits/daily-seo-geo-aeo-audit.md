@@ -73,5 +73,21 @@ Site: 26 pages (1 homepage + 5 store pages + 20 locality pages) generated from `
 
 | Finding | Category | Status | First flagged |
 |---|---|---|---|
-| Candidate localities not yet geocoded/added: Charkop, Juhu, Bhayandar West, Ghodbunder Road corridor | Local Reach | Blocked — network access to nominatim/site unavailable in sandbox every automated run so far | 2026-09-13 |
-| No third-party press/citations/backlinks (Authoritativeness) | E-E-A-T / Brand Authority | Strategic, not mechanical — needs PR/outreach, not something to auto-generate | 2026-09-15 |
+| No third-party press/citations/backlinks (Authoritativeness) | E-E-A-T / Brand Authority | Strategic, not mechanical — needs human-approved outreach, in progress (see below) | 2026-09-15 |
+
+## 2026-09-17 update (human session, live network access)
+
+**Candidate localities: resolved.** The cloud routine's sandbox has hit a hard "connection failed / 403" wall on `nominatim.openstreetmap.org` and `helmetstorenearme.in` on every single automated run since 2026-09-13 — this looks like a categorical egress-allowlist policy on the CCR sandbox, not a transient outage, so waiting for it to "become available" isn't a real plan. Geocoded all 4 queued candidates directly from an interactive session (which has normal network access) instead:
+
+| Locality | Store | Distance | Verified via |
+|---|---|---|---|
+| Charkop | Malad | 3.3 km | Nominatim, live |
+| Juhu | Santacruz | 2.5 km | Nominatim, live |
+| Bhayandar West | Mira Road | 3.4 km | Nominatim, live (note: "Bhayandar West" needed a more specific query — a bare query returned Bhayandar **East** coordinates) |
+| Ghodbunder Road (corridor) | Thane | 7.5 km | Nominatim, live |
+
+All 4 added as real locality pages (hand-written blurbs, real landmarks — Charkop Market, JVPD Scheme/Juhu Circle, Jesal Park/Maxus Mall, Kasarvadavali/Waghbil/Hiranandani Estate). Site is now 30 pages (was 26).
+
+**Going forward — the routine's Local Reach instructions are changing** (see updated prompt): since live geocoding from the sandbox isn't realistically going to start working, the routine should stop attempting it and instead just **log** any new candidate locality names it reasons are plausible (from general knowledge, unverified) under a queue in this file, for a human to geocode and add in a session like this one — the same handoff pattern that just resolved this batch. This keeps the daily routine honest about what it can't do rather than repeating a failing action indefinitely.
+
+**Backlinks/citations: work started, not delegated to the routine.** This is outreach-shaped work (external sites, in some cases real emails sent as the business) — it needs human review before anything goes out, so it's being handled in interactive sessions, never added to the unattended daily job.

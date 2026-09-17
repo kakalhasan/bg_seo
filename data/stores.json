@@ -114,6 +114,13 @@
           "km": 4.0,
           "minutes": "15-20",
           "blurb": "From Kandivali East — Thakur Village, Poisar — the ride down is via the Western Express Highway service road or the Link Road flyover, roughly 15-20 minutes depending on the signal at Malad. Worth the trip if you want to physically compare an LS2 full-face against a modular before deciding, rather than guess from photos."
+        },
+        {
+          "name": "Charkop",
+          "slug": "charkop",
+          "km": 3.3,
+          "minutes": "10-12",
+          "blurb": "Charkop's sector-numbered residential blocks and Charkop Market are a short run down Link Road onto Chincholi Bunder Road — under fifteen minutes even with the Kandivali signals. A regular stop for Charkop riders who'd rather try a jacket size on in person than guess between two sizes online."
         }
       ],
       "faqs": [
@@ -214,6 +221,13 @@
           "km": 3.4,
           "minutes": "12-15",
           "blurb": "Andheri West riders coming down SV Road hit some signal traffic near Vile Parle, so budget closer to fifteen minutes. Worth it if you want to physically compare glove and boot sizes across brands rather than order two sizes online and return one."
+        },
+        {
+          "name": "Juhu",
+          "slug": "juhu",
+          "km": 2.5,
+          "minutes": "8-10",
+          "blurb": "Juhu — Juhu Beach, JVPD Scheme — is a straightforward ride down SV Road and onto VM Bhargav Road, under ten minutes outside beach-weekend traffic. Handy for riders parked up near Juhu Circle wanting a quick helmet fit-check or a strap replacement before a coastal ride."
         }
       ],
       "faqs": [
@@ -307,6 +321,13 @@
           "km": 1.4,
           "minutes": "6-8",
           "blurb": "Kashimira is actually one of the closest localities to the Mira Road store — a quick six-to-eight-minute ride down the Mira Bhayandar Road toward Ghodbunder. Worth the stop if you're heading out toward Ghodbunder Road or further up the Mumbai-Ahmedabad highway and want your gear checked first."
+        },
+        {
+          "name": "Bhayandar West",
+          "slug": "bhayandar-west",
+          "km": 3.4,
+          "minutes": "10-12",
+          "blurb": "Bhayandar West — Jesal Park, Maxus Mall — sits on the other side of the station from Mira Road, a ride down Bhayandar Station Road and across to Gaurav Sankalp, usually ten to twelve minutes. A common stop for Jesal Park riders picking up gloves or a full-face helmet before a highway run."
         }
       ],
       "faqs": [
@@ -403,6 +424,13 @@
           "km": 2.5,
           "minutes": "12-15",
           "blurb": "Thane East riders — around Kopri and the station — cross over via the station bridge or Kachrali, so budget closer to fifteen minutes depending on the time of day. A regular stop for station-area commuters looking to upgrade from a stock two-wheeler helmet."
+        },
+        {
+          "name": "Ghodbunder Road",
+          "slug": "ghodbunder-road",
+          "km": 7.5,
+          "minutes": "20-25",
+          "blurb": "Ghodbunder Road — the long stretch of townships from Kasarvadavali to Waghbil and Hiranandani Estate — connects back to Khopat via LBS Marg, budget twenty to twenty-five minutes depending on the flyover traffic. Worth the ride down if you're commuting the corridor daily and want a helmet that's actually fitted, not sized off a chart."
         }
       ],
       "faqs": [
