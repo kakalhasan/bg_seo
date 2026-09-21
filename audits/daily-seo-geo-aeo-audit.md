@@ -60,17 +60,27 @@ Site: 30 pages (1 homepage + 5 store pages + 24 locality pages) generated from `
 
 ## Candidate localities awaiting human geocoding
 
-No distances are stated — none have been verified. A human should geocode each against its named store and confirm it's genuinely in walkable/short-ride range before writing a locality page.
+None currently queued — see the 2026-09-21 update below, which resolved all 7 candidates logged as of the previous run.
 
-| Locality | Nearest store | Why it's plausible | First logged |
+---
+
+## 2026-09-21 update (human session, live network access)
+
+**All 7 queued candidates: resolved.** Same handoff pattern as the 2026-09-17 batch — the cloud routine's sandbox still can't reach `nominatim.openstreetmap.org` (blocked since 2026-09-13), so it correctly logged plausible candidates rather than guessing coordinates. Geocoded all 7 from an interactive session with live network access:
+
+| Locality | Store | Distance | Verified via |
 |---|---|---|---|
-| Malad East | Malad | Directly across the railway tracks from Malad West (where the store and existing "Malad West" locality set are) — same station, opposite side, well-known adjacent locality not yet in `data/stores.json`. | 2026-09-17 |
-| Santacruz East | Santacruz | Directly across the railway tracks from Santacruz West — same relationship as Malad East/West above, not yet covered. | 2026-09-17 |
-| Kapurbawdi | Thane | Well-known Thane West junction/locality on the Ghodbunder Road corridor, between the store's Thane West address and the already-covered Ghodbunder Road locality — likely closer than Ghodbunder Road itself. | 2026-09-17 |
-| Kharghar | Navi Mumbai | Well-known Navi Mumbai locality directly adjacent to CBD Belapur (already covered from this store) — same corridor, one node further south. | 2026-09-17 |
-| Dahisar | Mira Road | Large, well-known Mumbai suburb immediately south of the Mumbai/Mira-Bhayandar border (Dahisar Toll Naka); Mira Road currently has no candidate queued at all. | 2026-09-19 |
-| Khar East | Santacruz | Standard Western-line station-pair locality directly across the tracks from Khar West, which is already covered from this store — same relationship as the already-queued Santacruz East / Malad East. | 2026-09-20 |
-| Panchpakhadi | Thane | Well-known, long-established Thane West locality immediately adjacent to Thane railway station and the already-covered Naupada locality. | 2026-09-20 |
+| Malad East | Malad | 2.9 km | Nominatim, live (suburb node) |
+| Santacruz East | Santacruz | 2.8 km | Nominatim, live (no suburb-level node returned for this one — anchored to a named building inside the Santacruz East/Vakola area instead) |
+| Khar East | Santacruz | 2.6 km | Nominatim, live (no locality node for "Khar East" itself — anchored to Khar Road station, which straddles both sides) |
+| Kapurbawdi | Thane | 2.5 km | Nominatim, live (anchored to the Majiwada–Kapurbawdi flyover junction) |
+| Panchpakhadi | Thane | 1.6 km | Nominatim, live (locality node) |
+| Kharghar | Navi Mumbai | 5.3 km | Nominatim, live (anchored to Kharghar station) |
+| Dahisar | Mira Road | 5.6 km | Nominatim, live (anchored to Dahisar station) |
+
+All 7 added as real locality pages (hand-written blurbs, real landmarks — Malad subway/Pathanwadi bridge, Vakola/Kalina/BKC, Khar subway/Linking Road, the Ghodbunder Road–EEH junction, Thane station/Panchpakhadi naka, CIDCO/Central Park, the Dahisar Toll Naka). Site is now 37 pages (was 30). Distances above are straight-line-to-road estimates (~1.3×) consistent with how every other locality on this site states its distance — not a guarantee.
+
+No further action needed on this queue until the routine logs new candidates.
 
 ---
 

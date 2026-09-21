@@ -122,6 +122,13 @@
           "km": 3.3,
           "minutes": "10-12",
           "blurb": "Charkop's sector-numbered residential blocks and Charkop Market are a short run down Link Road onto Chincholi Bunder Road — under fifteen minutes even with the Kandivali signals. A regular stop for Charkop riders who'd rather try a jacket size on in person than guess between two sizes online."
+        },
+        {
+          "name": "Malad East",
+          "slug": "malad-east",
+          "km": 2.9,
+          "minutes": "10-12",
+          "blurb": "Malad East riders cross over via the Malad subway or the Pathanwadi Link Road bridge, then continue on to Chincholi Bunder Road — about ten to twelve minutes total once past the subway traffic. A common stop for riders from around Malad East station or Pathanwadi who don't want to backtrack the long way round via the Western Express Highway."
         }
       ],
       "faqs": [
@@ -229,6 +236,20 @@
           "km": 2.5,
           "minutes": "8-10",
           "blurb": "Juhu — Juhu Beach, JVPD Scheme — is a straightforward ride down SV Road and onto VM Bhargav Road, under ten minutes outside beach-weekend traffic. Handy for riders parked up near Juhu Circle wanting a quick helmet fit-check or a strap replacement before a coastal ride."
+        },
+        {
+          "name": "Santacruz East",
+          "slug": "santacruz-east",
+          "km": 2.8,
+          "minutes": "10-12",
+          "blurb": "Santacruz East and Vakola riders cross over via the Santacruz station bridge or the Vakola flyover onto SV Road, then a short run down to VM Bhargav Road — about ten minutes outside the BKC office-hours crush. Handy for anyone working around Kalina or the university campus who wants a helmet fitted on the way home instead of guessing a size online."
+        },
+        {
+          "name": "Khar East",
+          "slug": "khar-east",
+          "km": 2.6,
+          "minutes": "8-10",
+          "blurb": "Khar East riders come across via the Khar subway onto Linking Road, then down to VM Bhargav Road — under ten minutes on a normal day, longer only if the subway itself is backed up. A quick detour for anyone in the Khar East residential lanes near the station who'd rather try a jacket on than order two sizes and return one."
         }
       ],
       "faqs": [
@@ -329,6 +350,13 @@
           "km": 3.4,
           "minutes": "10-12",
           "blurb": "Bhayandar West — Jesal Park, Maxus Mall — sits on the other side of the station from Mira Road, a ride down Bhayandar Station Road and across to Gaurav Sankalp, usually ten to twelve minutes. A common stop for Jesal Park riders picking up gloves or a full-face helmet before a highway run."
+        },
+        {
+          "name": "Dahisar",
+          "slug": "dahisar",
+          "km": 5.6,
+          "minutes": "18-22",
+          "blurb": "Dahisar riders usually come up the Western Express Highway service road, past the Dahisar Toll Naka and across into Mira-Bhayandar — eighteen to twenty-two minutes outside the toll-naka backup that stretch is known for. Worth the ride for Dahisar East regulars who'd rather test a full-face helmet's fit in person than gamble on a returned online order."
         }
       ],
       "faqs": [
@@ -432,6 +460,20 @@
           "km": 7.5,
           "minutes": "20-25",
           "blurb": "Ghodbunder Road — the long stretch of townships from Kasarvadavali to Waghbil and Hiranandani Estate — connects back to Khopat via LBS Marg, budget twenty to twenty-five minutes depending on the flyover traffic. Worth the ride down if you're commuting the corridor daily and want a helmet that's actually fitted, not sized off a chart."
+        },
+        {
+          "name": "Kapurbawdi",
+          "slug": "kapurbawdi",
+          "km": 2.5,
+          "minutes": "8-10",
+          "blurb": "Kapurbawdi — the big junction where Ghodbunder Road meets the Eastern Express Highway — is a straightforward run down LBS Marg to the Khopat store, eight to ten minutes outside the evening jam that junction is known for. Worth the short ride if you're heading up Ghodbunder Road afterward and want your gear sorted before you go."
+        },
+        {
+          "name": "Panchpakhadi",
+          "slug": "panchpakhadi",
+          "km": 1.6,
+          "minutes": "6-8",
+          "blurb": "Panchpakhadi, right by Thane station and the naka of the same name, is one of the closest localities to the Khopat store — a quick six-to-eight-minute run down LBS Marg. An easy stop for station-area commuters swinging by before or after a train, same as the Naupada crowd next door."
         }
       ],
       "faqs": [
@@ -553,6 +595,13 @@
           "km": 6.3,
           "minutes": "20-25",
           "blurb": "From Vashi, down Palm Beach Road or the Sion-Panvel Highway service road, budget twenty to twenty-five minutes depending on the APMC market traffic. Worth the trip for riders comparing touring luggage — tank bags and saddle bags are easier to judge in person."
+        },
+        {
+          "name": "Kharghar",
+          "slug": "kharghar",
+          "km": 5.3,
+          "minutes": "15-20",
+          "blurb": "Kharghar riders come down Palm Beach Road or the Sion-Panvel Highway service road to reach Seawoods, fifteen to twenty minutes depending on the CIDCO junction traffic. A regular stop for Kharghar's Central Park and sector crowd picking up touring luggage before a highway run, rather than judging saddle-bag size from photos."
         }
       ],
       "faqs": [
