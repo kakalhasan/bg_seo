@@ -1,13 +1,13 @@
 # Daily SEO / AEO / GEO Audit — helmetstorenearme.in
 
-**Date:** 2026-09-20
-**Status:** 🟢 Clean run — zero issues found across all six categories. No auto-fixes needed. Two new candidate localities logged (Khar East near Santacruz, Panchpakhadi near Thane); the 5 existing candidates remain unresolved, carried over — not duplicated.
+**Date:** 2026-09-21
+**Status:** 🟢 Clean run — zero issues found across all six categories. No auto-fixes needed. Four new candidate localities logged (Borivali near Malad, Bandra East near Santacruz, Kalwa near Thane, Turbhe near Navi Mumbai); no candidates carried over from before, since the 2026-09-21 human session resolved and shipped all 7 that were queued.
 
-Site: 30 pages (1 homepage + 5 store pages + 24 locality pages) generated from `data/stores.json` via `generate.py`. Live network access to `helmetstorenearme.in` and `nominatim.openstreetmap.org` remains categorically blocked in this sandbox (failing since 2026-09-13) — audit performed entirely against the local generated output and source data, per the revised process.
+Site: 37 pages (1 homepage + 5 store pages + 31 locality pages) generated from `data/stores.json` via `generate.py`. Live network access to `helmetstorenearme.in` and `nominatim.openstreetmap.org` remains categorically blocked in this sandbox (failing since 2026-09-13) — audit performed entirely against the local generated output and source data, per the revised process.
 
-**Housekeeping note:** local checkout started on a detached HEAD at `60e790a` (yesterday's commit), matching `origin/main` after fetch, but the local `main` branch ref was 2 commits behind (`7036c7e`). Fast-forwarded local `main` to `origin/main` (`60e790a`) and checked it out — no lost work, nothing to reconcile beyond that.
+**Housekeeping note:** local checkout started on a detached HEAD at `335f08b` (a same-day human session's commit adding 7 geocoded locality pages), which was already 4 commits ahead of what the local `main` branch ref pointed to. Fetched `origin/main`, confirmed it matched the detached HEAD exactly, and fast-forwarded local `main` onto it — no lost work, nothing to reconcile beyond that.
 
-**Generator note:** `python3 generate.py` was re-run to confirm zero drift between source data and committed HTML. All 30 pages matched byte-for-byte except `sitemap.xml`, which unconditionally re-stamps every `<lastmod>` to the run date regardless of whether content changed (see carried-over item below). Reverted the sitemap-only diff (`git checkout -- sitemap.xml`) rather than commit it, consistent with every prior clean run.
+**Generator note:** `python3 generate.py` was re-run to confirm zero drift between source data and committed HTML. All 37 pages, including `sitemap.xml`, matched byte-for-byte this run — the human session's commit was made today, so the `<lastmod>` date the generator stamps happened to already equal today's date. This is coincidental, not a fix; the underlying behavior (unconditional re-stamp to run date rather than tracking real content changes) is unchanged and remains carried over below.
 
 ---
 
@@ -15,72 +15,63 @@ Site: 30 pages (1 homepage + 5 store pages + 24 locality pages) generated from `
 
 | Check | Result |
 |---|---|
-| Sitemap vs actual pages | ✅ 30/30 match exactly, no drift (content-wise; see generator note above on `lastmod` churn) |
+| Sitemap vs actual pages | ✅ 37/37 match exactly, no drift, no missing/extra URLs either direction |
 | robots.txt bot coverage | ✅ `*`, GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended all `Allow: /`, sitemap referenced |
-| JSON-LD parses | ✅ 0 errors across all 30 pages (programmatic parse of every `<script type="application/ld+json">` block) |
+| JSON-LD parses | ✅ 0 errors across all 37 pages (programmatic parse of every `<script type="application/ld+json">` block) |
 | Broken internal links | ✅ 0 found (every `href="/..."` resolves to a file on disk) |
-| Image alt text | ✅ Every `<img>` has non-empty alt text; all gallery files referenced in `data/stores.json` verified present on disk |
-| Title tag length | ✅ All 30 ≤60 chars, all unique |
-| Meta description length/uniqueness | ✅ All 30 unique, all ≤140 chars (decoded-entity length) |
+| Image alt text | ✅ Every `<img>` has non-empty alt text |
+| Title tag length | ✅ All 37 ≤60 chars, all unique |
+| Meta description length/uniqueness | ✅ All 37 unique, all ≤140 chars (decoded-entity length) |
 | Canonical tags | ✅ Present and correct on every page |
 
 ## 2. Schema & Structured Data
 
-- `SportingGoodsStore` + `FAQPage` + `BreadcrumbList` + `openingHoursSpecification` present on all 29 store/locality pages; `Organization` + 5×`SportingGoodsStore` on the homepage.
-- Re-scanned all 30 pages' JSON-LD for any `Review` node carrying a `reviewRating` field (the fabrication pattern fixed 2026-09-16) — **0 found**, fix holds.
-- `AggregateRating` correctly present only where `reviews.rating` is a real, non-null value (Malad 4.7, Thane 4.5); correctly absent for Santacruz, Mira Road and Navi Mumbai, whose source data has `rating: null` (Justdial/Google listings with a review count but no aggregate star value surfaced yet). This is honest missing data, not a bug — no value fabricated to fill it.
+- `SportingGoodsStore` + `FAQPage` + `BreadcrumbList` + `openingHoursSpecification` present on all 36 store/locality pages; `Organization` + 5×`SportingGoodsStore` on the homepage.
+- Re-scanned all 37 pages' JSON-LD for any `Review` node carrying a `reviewRating` field (the fabrication pattern fixed 2026-09-16) — **0 found**, fix holds.
+- `AggregateRating` correctly present only where `reviews.rating` is a real, non-null value in `data/stores.json` (Malad 4.7/2445, Thane 4.5/34 — appearing on the homepage plus each of their own store + locality pages, 17 pages total); correctly absent for Santacruz, Mira Road and Navi Mumbai, whose source data has `rating: null`. Honest missing data, not a bug.
 - No other plausible-looking-guess values found in schema; every field traces to an explicit value in `data/stores.json`.
 
 ## 3. AI Citability / AEO
 
-- Entity-coverage re-check (programmatic, HTML-entity-aware, across all 5 store pages): all 6 product categories, all 3 brands (LS2, Crank1, MadDog), ISI/ECE/DOT certification, EMI policy, and 7-day return policy each appear on 5/5 store pages. No gap found.
+- Entity-coverage re-check (programmatic, HTML-entity-aware, across all 5 store pages): all 6 categories (including the two with `&` in the name — "Touring Luggage & Bags", "Bike Accessories & Electronics", which render HTML-escaped as `&amp;` and are correctly present), all 3 brands (LS2, Crank1, MadDog), ISI/ECE/DOT certification, EMI policy, and 7-day return policy each appear on 5/5 store pages — the brand-wide EMI/returns and brands-carried FAQ that `generate.py` appends to every page covers the policy/brand facts, and the per-store hand-written FAQs cover certification, try-before-buy, location and stock-check. No gap found.
 - Every store and locality page states a real, specific address, phone number, named landmark, and real distance/ride-time — no generic filler.
 - `llms.txt` cross-checked field-by-field against current `data/stores.json` — every phone number, every `maps_url`, and every locality name across all 5 stores confirmed present — 100% accurate, no drift.
 
 ## 4. Content E-E-A-T / Brand Authority
 
-- Reviews are real and sourced (`source` + `source_url` present for all 5 stores' review blocks — Google/Justdial/Magicpin).
-- Real store photos: all gallery files referenced in `data/stores.json` verified present on disk for all 5 stores.
+- Reviews are real and sourced (`source` + `source_url` present at the reviews-block level for all 5 stores, quotes attributed by name).
+- Real store photos: all gallery files referenced in `data/stores.json` verified present on disk for all 5 stores (4 for Malad/Santacruz, 3 for Mira Road/Thane/Navi Mumbai).
 - Real videos: a distinct YouTube store-tour `youtube_id` present for all 5 stores.
-- NAP consistency: verified programmatically — all 5 stores' phone numbers appear byte-for-byte on all their store/locality pages.
-- Authoritativeness (press/backlinks): `audits/backlink-citation-plan.md` unchanged since 2026-09-17 — still the human's active research doc. No repo state change to note this run; remains human-executed outreach work, not touched by this routine.
+- NAP consistency: verified programmatically — all 5 stores' phone numbers appear byte-for-byte on their store page and every one of their locality pages.
+- Authoritativeness (press/backlinks): `audits/backlink-citation-plan.md` last touched 2026-09-17, unchanged since — still the human's active research doc. No repo state change to note this run; remains human-executed outreach work, not touched by this routine.
 
 ## 5. Platform Optimization
 
-- FAQs cover the full natural buying-decision set: certification, try-before-buy, stock-check, EMI/returns, brands carried.
+- FAQs cover the full natural buying-decision set: certification, try-before-buy, stock-check, EMI/returns, brands carried, exact location.
 - No further gaps found against the "what would an AI Overview/ChatGPT/Perplexity want to quote" checklist this run.
 
 ## 6. Local Reach Gaps
 
 - Network egress to `nominatim.openstreetmap.org` and `helmetstorenearme.in` remains blocked — no live geocoding attempted, per the revised process. Bucket (B) not used this run.
-- The 5 candidates logged 2026-09-17/2026-09-19 (Malad East, Santacruz East, Kapurbawdi, Kharghar, Dahisar) are **still not present** in `data/stores.json` — still awaiting human geocoding, carried over below (not duplicated).
-- Two new candidates identified this run, both following the same well-known-adjacency pattern already used for Malad East/Santacruz East: **Khar East** (Santacruz store — Khar West is already covered; Khar East is the standard Western-line station-pair locality directly across the tracks) and **Panchpakhadi** (Thane store — a well-known, long-established locality immediately adjacent to Thane railway station and the already-covered Naupada). Both added to the candidate list below, no distance claimed.
+- No candidates carried over: the 2026-09-21 human session geocoded and shipped all 7 that were queued as of the previous run (see repo history — 31 localities now live, up from 24).
+- Four new candidates identified this run by adjacency to already-covered localities, added to the list below with no distance claimed:
+  - **Borivali** (Malad store) — the next major, well-known Mumbai western-suburb node immediately north of Kandivali West/East, which are already covered.
+  - **Bandra East** (Santacruz store) — a distinct, well-known locality directly across the tracks from Bandra West, which is already covered.
+  - **Kalwa** (Thane store) — a well-known locality directly across Thane creek from Thane East, which is already covered.
+  - **Turbhe** (Navi Mumbai store) — a well-known Navi Mumbai node a short distance from Nerul/Seawoods along the same Sion-Panvel highway corridor as Vashi/Sanpada, which are already covered.
 
 ---
 
 ## Candidate localities awaiting human geocoding
 
-None currently queued — see the 2026-09-21 update below, which resolved all 7 candidates logged as of the previous run.
+| Locality | Store | Why it's a plausible candidate |
+|---|---|---|
+| Borivali | Malad | Immediately north of Kandivali West/Kandivali East (both already covered), major well-known Mumbai suburb |
+| Bandra East | Santacruz | Adjacent to Bandra West (already covered), distinct well-known commercial/residential locality |
+| Kalwa | Thane | Directly across Thane creek from Thane East (already covered), well-known locality |
+| Turbhe | Navi Mumbai | Near Vashi/Sanpada (already covered) along the same Navi Mumbai corridor |
 
----
-
-## 2026-09-21 update (human session, live network access)
-
-**All 7 queued candidates: resolved.** Same handoff pattern as the 2026-09-17 batch — the cloud routine's sandbox still can't reach `nominatim.openstreetmap.org` (blocked since 2026-09-13), so it correctly logged plausible candidates rather than guessing coordinates. Geocoded all 7 from an interactive session with live network access:
-
-| Locality | Store | Distance | Verified via |
-|---|---|---|---|
-| Malad East | Malad | 2.9 km | Nominatim, live (suburb node) |
-| Santacruz East | Santacruz | 2.8 km | Nominatim, live (no suburb-level node returned for this one — anchored to a named building inside the Santacruz East/Vakola area instead) |
-| Khar East | Santacruz | 2.6 km | Nominatim, live (no locality node for "Khar East" itself — anchored to Khar Road station, which straddles both sides) |
-| Kapurbawdi | Thane | 2.5 km | Nominatim, live (anchored to the Majiwada–Kapurbawdi flyover junction) |
-| Panchpakhadi | Thane | 1.6 km | Nominatim, live (locality node) |
-| Kharghar | Navi Mumbai | 5.3 km | Nominatim, live (anchored to Kharghar station) |
-| Dahisar | Mira Road | 5.6 km | Nominatim, live (anchored to Dahisar station) |
-
-All 7 added as real locality pages (hand-written blurbs, real landmarks — Malad subway/Pathanwadi bridge, Vakola/Kalina/BKC, Khar subway/Linking Road, the Ghodbunder Road–EEH junction, Thane station/Panchpakhadi naka, CIDCO/Central Park, the Dahisar Toll Naka). Site is now 37 pages (was 30). Distances above are straight-line-to-road estimates (~1.3×) consistent with how every other locality on this site states its distance — not a guarantee.
-
-No further action needed on this queue until the routine logs new candidates.
+No distances are stated above — a human must geocode these (as with the 2026-09-17 batch) before any locality page is written.
 
 ---
 
@@ -88,9 +79,9 @@ No further action needed on this queue until the routine logs new candidates.
 
 | Finding | Category | Action Taken | Notes |
 |---|---|---|---|
-| Full technical/schema/AEO/E-E-A-T sweep across all 30 pages | All | Re-verified, 0 issues found | Titles/descriptions, JSON-LD, links, alt text, canonicals, robots.txt, entity coverage, NAP, llms.txt all clean |
-| `generate.py` re-run produced a `sitemap.xml`-only diff (all 30 `<lastmod>` bumped to today) despite no actual content change | Technical GEO/SEO | **Reverted**, not committed | Same recurring behavior as every prior clean run — see carried-over item below |
-| Two new candidate localities identified (Khar East near Santacruz, Panchpakhadi near Thane) | Local Reach | Logged to candidate list, no page written | Awaiting human geocoding, per revised process |
+| Full technical/schema/AEO/E-E-A-T sweep across all 37 pages | All | Re-verified, 0 issues found | Titles/descriptions, JSON-LD, links, alt text, canonicals, robots.txt, entity coverage, NAP, llms.txt all clean |
+| `generate.py` re-run produced zero diff, including `sitemap.xml` | Technical GEO/SEO | No action needed this run | Coincidental — today's run date matches the human session's commit date, not a fix; see carried-over item below |
+| Four new candidate localities identified (Borivali, Bandra East, Kalwa, Turbhe) | Local Reach | Logged to candidate list, no page written | Awaiting human geocoding, per revised process |
 
 ## Carried over from previous runs
 
