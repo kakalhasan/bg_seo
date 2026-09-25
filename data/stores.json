@@ -129,6 +129,20 @@
           "km": 2.9,
           "minutes": "10-12",
           "blurb": "Malad East riders cross over via the Malad subway or the Pathanwadi Link Road bridge, then continue on to Chincholi Bunder Road — about ten to twelve minutes total once past the subway traffic. A common stop for riders from around Malad East station or Pathanwadi who don't want to backtrack the long way round via the Western Express Highway."
+        },
+        {
+          "name": "Borivali West",
+          "slug": "borivali-west",
+          "km": 7.9,
+          "minutes": "20-25",
+          "blurb": "Borivali West riders head down via Link Road, past Kandivali and Poisar Depot, before crossing onto Chincholi Bunder Road near the Malad signal — budget twenty to twenty-five minutes with the Kandivali traffic factored in. It's the outer edge of our regular delivery radius, but riders from around Eksar Road or IC Colony still make the trip for a proper helmet fitting rather than order a size online and hope."
+        },
+        {
+          "name": "Goregaon East",
+          "slug": "goregaon-east",
+          "km": 5.5,
+          "minutes": "18-22",
+          "blurb": "Goregaon East riders — around NESCO, Filmcity Road or the Aarey Colony gate — usually cross over via the Goregaon subway or the Aarey Road bridge before joining Link Road down to Chincholi Bunder Road, about eighteen to twenty-two minutes depending on the level crossing. A common detour for the NESCO and Film City office crowd swinging by after work to try on a jacket in person rather than order two sizes online."
         }
       ],
       "faqs": [
@@ -250,6 +264,27 @@
           "km": 2.6,
           "minutes": "8-10",
           "blurb": "Khar East riders come across via the Khar subway onto Linking Road, then down to VM Bhargav Road — under ten minutes on a normal day, longer only if the subway itself is backed up. A quick detour for anyone in the Khar East residential lanes near the station who'd rather try a jacket on than order two sizes and return one."
+        },
+        {
+          "name": "Bandra East",
+          "slug": "bandra-east",
+          "km": 4.6,
+          "minutes": "15-18",
+          "blurb": "Bandra East — BKC, Kalanagar, Bandra Terminus — usually rides down via CST Road or the Western Express Highway service road onto SV Road, about fifteen to eighteen minutes depending on BKC office traffic. A regular stop for the BKC commute crowd wanting a helmet that's actually fitted before a longer highway ride out of the city, not sized off a chart."
+        },
+        {
+          "name": "Vile Parle East",
+          "slug": "vile-parle-east",
+          "km": 3.0,
+          "minutes": "9-11",
+          "blurb": "Vile Parle East — around the domestic airport and Nehru Road — is a quick run down SV Road, nine to eleven minutes outside airport-adjacent peak traffic. Riders from the airport-area offices often stop in on a break to pick up gloves or a visor rather than order online and wait for a swap."
+        },
+        {
+          "name": "Andheri East",
+          "slug": "andheri-east",
+          "km": 4.9,
+          "minutes": "16-19",
+          "blurb": "Andheri East — Chakala, MIDC, Sahar — comes down via the Western Express Highway service road onto SV Road, sixteen to nineteen minutes depending on the Airport Road signal. A regular stop for the MIDC office crowd and international-terminal-area commuters wanting a proper ECE-rated helmet before a highway ride, not a guessed-size online order."
         }
       ],
       "faqs": [
@@ -474,6 +509,20 @@
           "km": 1.6,
           "minutes": "6-8",
           "blurb": "Panchpakhadi, right by Thane station and the naka of the same name, is one of the closest localities to the Khopat store — a quick six-to-eight-minute run down LBS Marg. An easy stop for station-area commuters swinging by before or after a train, same as the Naupada crowd next door."
+        },
+        {
+          "name": "Kalwa",
+          "slug": "kalwa",
+          "km": 3.3,
+          "minutes": "10-13",
+          "blurb": "Kalwa riders cross over via the Kalwa bridge and onto LBS Marg, then down to Khopat — about ten to thirteen minutes outside the bridge's evening bottleneck. A regular stop for Kalwa naka and Subhash Nagar riders who'd rather try a jacket on in person than guess a size and return it."
+        },
+        {
+          "name": "Mulund West",
+          "slug": "mulund-west",
+          "km": 5.2,
+          "minutes": "15-18",
+          "blurb": "Mulund West riders come down LBS Marg past the old Mulund check naka — the Mumbai-Thane border point — straight through to Khopat, about fifteen to eighteen minutes outside evening border traffic. A common stop for the LBS Marg commute crowd picking up a helmet upgrade before continuing further into Thane or back toward Mumbai."
         }
       ],
       "faqs": [
@@ -602,6 +651,13 @@
           "km": 5.3,
           "minutes": "15-20",
           "blurb": "Kharghar riders come down Palm Beach Road or the Sion-Panvel Highway service road to reach Seawoods, fifteen to twenty minutes depending on the CIDCO junction traffic. A regular stop for Kharghar's Central Park and sector crowd picking up touring luggage before a highway run, rather than judging saddle-bag size from photos."
+        },
+        {
+          "name": "Turbhe",
+          "slug": "turbhe",
+          "km": 9.3,
+          "minutes": "28-32",
+          "blurb": "Turbhe — home to the APMC market and Turbhe MIDC — is the farthest of our Navi Mumbai localities, reached via the Sion-Panvel Highway and Palm Beach Road down to Seawoods, budget twenty-eight to thirty-two minutes outside the APMC's early-morning truck traffic. Worth the ride for Turbhe MIDC's industrial and warehouse crowd stocking up on riding gear for the daily commute."
         }
       ],
       "faqs": [
