@@ -285,6 +285,13 @@
           "km": 4.9,
           "minutes": "16-19",
           "blurb": "Andheri East — Chakala, MIDC, Sahar — comes down via the Western Express Highway service road onto SV Road, sixteen to nineteen minutes depending on the Airport Road signal. A regular stop for the MIDC office crowd and international-terminal-area commuters wanting a proper ECE-rated helmet before a highway ride, not a guessed-size online order."
+        },
+        {
+          "name": "Mahim",
+          "slug": "mahim",
+          "km": 7.0,
+          "minutes": "22-25",
+          "blurb": "Mahim — the Mahim Causeway, Mahim Junction station, and the dargah-church stretch by the bay — connects up via SV Road through Bandra and Khar, about twenty-two to twenty-five minutes down to Santacruz outside the causeway's usual bus-lane congestion. Riders crossing over from the island city side often stop at Santacruz first for a properly fitted helmet before continuing further into the western suburbs."
         }
       ],
       "faqs": [
@@ -523,6 +530,13 @@
           "km": 5.2,
           "minutes": "15-18",
           "blurb": "Mulund West riders come down LBS Marg past the old Mulund check naka — the Mumbai-Thane border point — straight through to Khopat, about fifteen to eighteen minutes outside evening border traffic. A common stop for the LBS Marg commute crowd picking up a helmet upgrade before continuing further into Thane or back toward Mumbai."
+        },
+        {
+          "name": "Wagle Estate",
+          "slug": "wagle-estate",
+          "km": 3.3,
+          "minutes": "10-13",
+          "blurb": "Wagle Estate — Thane's industrial and IT belt, home to everything from small manufacturing units to the TCS Neptune campus — is one of the closest localities to the Khopat store, a short ride down Wagle Estate Road onto LBS Marg. A regular stop for the estate's daily commuters and warehouse crews picking up a proper riding jacket before an evening ride home."
         }
       ],
       "faqs": [
