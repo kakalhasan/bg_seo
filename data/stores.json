@@ -143,6 +143,13 @@
           "km": 5.5,
           "minutes": "18-22",
           "blurb": "Goregaon East riders — around NESCO, Filmcity Road or the Aarey Colony gate — usually cross over via the Goregaon subway or the Aarey Road bridge before joining Link Road down to Chincholi Bunder Road, about eighteen to twenty-two minutes depending on the level crossing. A common detour for the NESCO and Film City office crowd swinging by after work to try on a jacket in person rather than order two sizes online."
+        },
+        {
+          "name": "Jogeshwari East",
+          "slug": "jogeshwari-east",
+          "km": 5.7,
+          "minutes": "18-22",
+          "blurb": "Jogeshwari East — the JVLR (Jogeshwari-Vikhroli Link Road) junction with the Western Express Highway, and the Jogeshwari East metro station on that corridor — connects up to Malad via the WEH service road past NESCO and Goregaon East, about eighteen to twenty-two minutes outside the Goregaon subway crush. A regular stop for JVLR office-corridor commuters crossing over from the eastern suburbs side who'd rather get a helmet properly fitted than order one off a size chart."
         }
       ],
       "faqs": [
@@ -537,6 +544,13 @@
           "km": 3.3,
           "minutes": "10-13",
           "blurb": "Wagle Estate — Thane's industrial and IT belt, home to everything from small manufacturing units to the TCS Neptune campus — is one of the closest localities to the Khopat store, a short ride down Wagle Estate Road onto LBS Marg. A regular stop for the estate's daily commuters and warehouse crews picking up a proper riding jacket before an evening ride home."
+        },
+        {
+          "name": "Manpada",
+          "slug": "manpada",
+          "km": 4.2,
+          "minutes": "12-16",
+          "blurb": "Manpada sits on the Ghodbunder Road belt between Kapurbawdi and Majiwada, close to Cadbury Junction and Pokhran Road No. 1 — a straightforward run down LBS Marg to Khopat, about twelve to sixteen minutes outside the Cadbury Junction signal backup. A regular stop for Vasant Vihar and Hiranandani Meadows riders heading in for a proper helmet fitting before continuing up Ghodbunder Road."
         }
       ],
       "faqs": [
