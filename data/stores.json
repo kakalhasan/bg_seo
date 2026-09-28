@@ -150,6 +150,20 @@
           "km": 5.7,
           "minutes": "18-22",
           "blurb": "Jogeshwari East — the JVLR (Jogeshwari-Vikhroli Link Road) junction with the Western Express Highway, and the Jogeshwari East metro station on that corridor — connects up to Malad via the WEH service road past NESCO and Goregaon East, about eighteen to twenty-two minutes outside the Goregaon subway crush. A regular stop for JVLR office-corridor commuters crossing over from the eastern suburbs side who'd rather get a helmet properly fitted than order one off a size chart."
+        },
+        {
+          "name": "Jogeshwari West",
+          "slug": "jogeshwari-west",
+          "km": 4.7,
+          "minutes": "16-20",
+          "blurb": "Jogeshwari West — the Oshiwara metro station stretch on New Link Road, right by the studio and production-office hub that's made Oshiwara a mini film district — connects straight up to Malad via New Link Road, about sixteen to twenty minutes outside the Andheri-Goregaon signal string. A regular stop for the New Link Road office and studio crowd who'd rather get a helmet properly fitted on the way home than order one off a size chart."
+        },
+        {
+          "name": "Malvani",
+          "slug": "malvani",
+          "km": 3.7,
+          "minutes": "10-14",
+          "blurb": "Malvani — the dense residential stretch around Malvani Road, Ambojwadi and Gate No. 8, just off Marve Road — is one of the closest localities to the store, a short ride down Marve Road onto Chincholi Bunder Road. A regular stop for the Malvani and Ambojwadi crowd picking up a first ISI-marked helmet or a quick strap fix rather than ordering online and waiting on a courier."
         }
       ],
       "faqs": [
@@ -551,6 +565,13 @@
           "km": 4.2,
           "minutes": "12-16",
           "blurb": "Manpada sits on the Ghodbunder Road belt between Kapurbawdi and Majiwada, close to Cadbury Junction and Pokhran Road No. 1 — a straightforward run down LBS Marg to Khopat, about twelve to sixteen minutes outside the Cadbury Junction signal backup. A regular stop for Vasant Vihar and Hiranandani Meadows riders heading in for a proper helmet fitting before continuing up Ghodbunder Road."
+        },
+        {
+          "name": "Kolshet Road",
+          "slug": "kolshet-road",
+          "km": 6.1,
+          "minutes": "16-20",
+          "blurb": "Kolshet Road's industrial belt — small-scale manufacturing and chemical units clustered near Kolshet Creek, with Hiranandani Estate anchoring the other end of the road — runs straight down to Khopat via LBS Marg, about sixteen to twenty minutes outside the road's own factory-shift traffic. A regular stop for Kolshet's industrial and warehouse crews picking up a proper riding jacket before the ride home, same as the Wagle Estate crowd a few kilometres over."
         }
       ],
       "faqs": [
