@@ -553,6 +553,13 @@
           "blurb": "Mulund West riders come down LBS Marg past the old Mulund check naka — the Mumbai-Thane border point — straight through to Khopat, about fifteen to eighteen minutes outside evening border traffic. A common stop for the LBS Marg commute crowd picking up a helmet upgrade before continuing further into Thane or back toward Mumbai."
         },
         {
+          "name": "Mulund East",
+          "slug": "mulund-east",
+          "km": 6.8,
+          "minutes": "18-22",
+          "blurb": "Mulund East riders take the Eastern Express Highway, past the EEH toll naka, up to Teen Hath Naka and into Khopat — a different crossing from the LBS Marg route Mulund West riders use on the other side of the tracks, about eighteen to twenty-two minutes outside the highway's own peak-hour backup. A regular stop for the EEH corridor crowd heading toward central Thane or further up the Mumbai-Nashik highway who'd rather get a helmet's fit checked in person than guess a size online."
+        },
+        {
           "name": "Wagle Estate",
           "slug": "wagle-estate",
           "km": 3.3,
