@@ -327,6 +327,13 @@
           "km": 6.5,
           "minutes": "18-22",
           "blurb": "Lokhandwala Complex — the high-rise stretch of Andheri West that grew out of the old Versova marshland, now home to Infinity Mall and Lokhandwala Market — connects down via New Link Road and the Oshiwara flyover onto SV Road, about eighteen to twenty-two minutes to VM Bhargav Road outside the Oshiwara signal backup. A regular stop for the Lokhandwala and Versova crowd who'd rather get a jacket sized in person than order two sizes online and return one."
+        },
+        {
+          "name": "Versova",
+          "slug": "versova",
+          "km": 6.6,
+          "minutes": "19-23",
+          "blurb": "Versova — the beachside end of Andheri West, anchored by the Metro Line 1's western terminus and the old fishing village (Koliwada) off JP Road — connects to Santacruz via Yari Road through Juhu and onto SV Road, about nineteen to twenty-three minutes to VM Bhargav Road once past the Juhu Circle signal. If you've ridden the metro out to its last stop and need a helmet sorted before heading back into the city, we're a shorter detour from here than most Andheri showrooms."
         }
       ],
       "faqs": [
