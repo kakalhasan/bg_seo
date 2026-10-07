@@ -171,6 +171,13 @@
           "km": 8.1,
           "minutes": "22-25",
           "blurb": "Borivali East riders come down the Western Express Highway service road, past the Sanjay Gandhi National Park gate and Dattapada Road, before cutting across to Chincholi Bunder Road near the Malad signal — a different corridor from the Link Road route Borivali West riders take on the other side of the station, about twenty-two to twenty-five minutes outside the WEH's own peak-hour crawl. A regular stop for the National Park and Dattapada Road office crowd who'd rather get a helmet's fit checked in person on the way home than guess a size online."
+        },
+        {
+          "name": "Evershine Nagar",
+          "slug": "evershine-nagar",
+          "km": 1.5,
+          "minutes": "5-7",
+          "blurb": "Evershine Nagar is one of the shortest rides in our service area — just off Link Road past Infiniti Mall and the Mindspace office cluster, then a quick cut onto Chincholi Bunder Road. A regular stop for the Infiniti Mall and D'Mart shopping crowd grabbing a glove or visor swap on the way past, and for Mindspace office staff who'd rather get a helmet's fit checked in person after work than guess a size online."
         }
       ],
       "faqs": [
