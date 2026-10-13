@@ -716,6 +716,13 @@
           "blurb": "CBD Belapur is the closest business district to the Seawoods store — a straight run down Palm Beach Road, under ten minutes outside office rush hour. Handy for the Belapur business-district crowd swinging by after work to try on a jacket before deciding."
         },
         {
+          "name": "Nerul",
+          "slug": "nerul",
+          "km": 3.2,
+          "minutes": "10-12",
+          "blurb": "Nerul's station end and DY Patil Stadium side are just across Palm Beach Road from the Seawoods store, about ten to twelve minutes down past the Sector 19/20 stretch. A regular stop for Nerul station commuters and DY Patil Stadium match-day crowds picking up a helmet or riding jacket on the way through rather than making a separate trip."
+        },
+        {
           "name": "Juinagar",
           "slug": "juinagar",
           "km": 4.9,
