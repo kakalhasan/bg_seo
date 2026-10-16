@@ -455,6 +455,13 @@
           "km": 2.7,
           "minutes": "9-11",
           "blurb": "Shanti Nagar is the older, numbered-sector stretch (Sector 1 through 11 on the municipal map) around Mira Road railway station and the Shanti Shopping Centre junction — the separate, west-side part of Mira Road East from Naya Nagar. From the station it's a straight run down Mira Bhayandar Road to Gaurav Sankalp, about nine to eleven minutes. Handy for commuters getting off at Mira Road station who'd rather pick up a helmet or riding jacket on the way home than make a separate trip later."
+        },
+        {
+          "name": "Rai",
+          "slug": "rai",
+          "km": 7.5,
+          "minutes": "26-30",
+          "blurb": "Rai is one of Mira-Bhayandar's old East Indian coastal villages, out past Bhayandar West along Uttan Road — a longer haul from Gaurav Sankalp, around twenty-six to thirty minutes. Riders continuing further out toward Uttan for a coastal run often stop at Rai first to get a helmet fitted in person rather than risk an online return halfway through the trip."
         }
       ],
       "faqs": [
