@@ -621,6 +621,13 @@
           "km": 6.1,
           "minutes": "16-20",
           "blurb": "Kolshet Road's industrial belt — small-scale manufacturing and chemical units clustered near Kolshet Creek, with Hiranandani Estate anchoring the other end of the road — runs straight down to Khopat via LBS Marg, about sixteen to twenty minutes outside the road's own factory-shift traffic. A regular stop for Kolshet's industrial and warehouse crews picking up a proper riding jacket before the ride home, same as the Wagle Estate crowd a few kilometres over."
+        },
+        {
+          "name": "Patlipada",
+          "slug": "patlipada",
+          "km": 4.9,
+          "minutes": "14-17",
+          "blurb": "Patlipada sits on Ghodbunder Road between Manpada and Waghbil, right where the Patlipada flyover cuts through the Hiranandani Estate junction traffic — a straightforward run down LBS Marg to Khopat, about fourteen to seventeen minutes outside the flyover's own signal backup. A regular stop for Regency and Hiranandani Estate riders heading in for a proper helmet fitting before continuing up Ghodbunder Road toward Kasarvadavali."
         }
       ],
       "faqs": [
