@@ -397,6 +397,7 @@ gtag('config', '{GA_MEASUREMENT_ID}');
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="{e(BRAND['site_name'])}">
 <meta property="og:url" content="{BASE_URL}/{canonical_path}">
 <meta property="og:image" content="{image_url}">
 <meta name="twitter:card" content="{twitter_card}">
